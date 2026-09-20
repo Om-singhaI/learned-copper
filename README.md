@@ -31,7 +31,7 @@ Raw boards are never committed to this repository. Derived data records the lice
 | 5 | 9 | Random split comparison and error analysis. |
 | 6 | 10 to 11 | Presentation and final report. |
 
-Progress is tracked on the project board attached to this repository.
+Progress is tracked on the [project board](https://github.com/users/Om-singhaI/projects/2). Sprint 1 runs September 19 to September 25, 2026.
 
 ## Repository layout
 
