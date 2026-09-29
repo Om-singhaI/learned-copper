@@ -43,3 +43,11 @@ Three real boards were pulled from the open-schematics rows API into data/raw/sa
 - Freerouting on the B7 board: two passes in well under a second, incomplete count 0. Importing the session back gave 19 tracks and vias where there were none, DRC unconnected went from 5 to 0, and the other 5 violations were unchanged. The whole export, route, import, check loop works.
 
 Open question for issue 6: why the Uart programmer board refuses to export. Probably a footprint or pad the exporter rejects.
+
+## Test set frozen (issue 2, September 28)
+
+The Freerouting PCBench mirror is cloned under data/mirror/freerouting (partial clone, fixtures and benchmark results only, 1.3 GB). All 119 PCBWorld D3 test boards map onto mirror folders, with PCBWorld's one override applied. splits/test_d3.json and splits/test_exclude_repos.txt are committed.
+
+Numbers from the mirror catalog (1,157 boards): tiers A 453, B 560, C 122, D 22; 1,037 two layer, 118 four layer, one six, one eight; 179 boards whose human reference still has unconnected items; 752 boards with no license recorded, then MIT 106, GPL 3.0 104. Of the 119 test boards, 118 are two layer and 14 have unconnected items in the human reference, which the completion metric will have to account for.
+
+Trap: board-manifest.json hashes were computed on Windows from CRLF files; the mirror stores LF. The freeze script checks hashes after converting line endings.
