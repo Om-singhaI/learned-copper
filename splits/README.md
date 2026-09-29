@@ -9,3 +9,7 @@ The held out test set: PCBWorld's D3 test lists (99 easy, 10 medium, 10 hard, 11
 ## test_exclude_repos.txt
 
 The 94 source repositories behind the 119 test boards. Every board from these repositories, in any dataset, stays out of training and validation.
+
+## mirror_inventory.csv
+
+Structural counts for all 1,157 mirror boards as loaded by KiCad 10 (`scripts/inventory.py`): file version, copper layers, outline size, footprints, pads, nets, segments, vias, track length, copper zones, unconnected connections, with the mirror's ground truth beside them for cross checking.

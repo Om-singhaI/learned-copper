@@ -51,3 +51,16 @@ The Freerouting PCBench mirror is cloned under data/mirror/freerouting (partial 
 Numbers from the mirror catalog (1,157 boards): tiers A 453, B 560, C 122, D 22; 1,037 two layer, 118 four layer, one six, one eight; 179 boards whose human reference still has unconnected items; 752 boards with no license recorded, then MIT 106, GPL 3.0 104. Of the 119 test boards, 118 are two layer and 14 have unconnected items in the human reference, which the completion metric will have to account for.
 
 Trap: board-manifest.json hashes were computed on Windows from CRLF files; the mirror stores LF. The freeze script checks hashes after converting line endings.
+
+## Inventory (issue 3, September 29)
+
+`scripts/inventory.py` drives `scripts/inventory_worker.py` under KiCad's Python, four workers, chunks of 40 with timeouts. All 1,157 mirror boards parsed in 20 seconds, none failed. Vias, layers and unconnected counts agree with the mirror's ground truth on every board; segment counts differ on 12 boards, eleven of them by one to five segments and one (kitspace_Unifying) by about a thousand, which looks like a difference in how arcs or overlapping segments were counted upstream. Not chased.
+
+What the pool looks like:
+
+- Layers: 1,037 two layer, 118 four layer, one six, one eight.
+- File formats: almost all KiCad 4 and 5 era (640 version 4, 366 from 2017, 87 version 3). KiCad 10 loads them all. This matters for open-schematics later, which spans the same range.
+- Size: median board 25 cm2, 90th percentile 98 cm2, largest 666 cm2. Median 33 footprints, 36 nets, 279 track segments; the biggest board has 1,441 footprints and 9,875 segments.
+- Copper zones on 991 boards, so the stripping rule in issue 5 has to handle zones on almost every board.
+- 14 boards have no board outline at all (zero area). They cannot be routed sensibly and fail DRC with an invalid outline, so the filter drops them.
+- 5 boards have no tracks, 180 have unconnected items in the human reference. 976 boards have tracks and zero unconnected items, which is the pool before the DRC filter in issue 4.
