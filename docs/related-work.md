@@ -156,10 +156,10 @@ Papers to cite in the report: PCBWorld, PCBench and the He dissertation, OmniRou
 54. Graph-Based Reinforcement Learning Approach for Multi-Power-Domain PCB PDN Shape and Stackup Synthesis. 2025 IEEE International Symposium on Electromagnetic Compatibility, Si, 2025. https://scholarsmine.mst.edu/ele_comeng_facwork/7329
 55. DeepPCB (InstaDeep) - commercial learned routing system (no paper). product site, 2020. https://deeppcb.ai
 56. Quilter - commercial RL + physics PCB place-and-route (no paper). company blog, 2023. https://www.quilter.ai/blog/pcb-autorouting-in-2026-a-review-of-traditional-tools-vs-quilters-ai-approach
-57. LaMPlace: Learning to Optimize Cross-Stage Metrics in Macro Placement (ADDED). ICLR 2025, 2025. https://proceedings.iclr.cc/paper_files/paper/2025/hash/04c0399a47ee4107cd03b08f1f8c3eeb-Abstract-Conference.html
-58. RoutePlacer: An End-to-End Routability-Aware Placer with Graph Neural Network (ADDED). KDD 2024, 2024. https://arxiv.org/abs/2406.02651
-59. Delving into Macro Placement with Reinforcement Learning (ADDED). MLCAD 2021, 2021. https://arxiv.org/abs/2109.02587
-60. Automatic PCB Component Placement via GNN-Guided Similarity Retrieval Coupled with GAN-Based Completion (ADDED). 2026 International Conference on Electronics Packaging and Hybrid Bond, 2026. https://doi.org/10.23919/ICEP-HBS69241.2026.11550476
+57. LaMPlace: Learning to Optimize Cross-Stage Metrics in Macro Placement . ICLR 2025, 2025. https://proceedings.iclr.cc/paper_files/paper/2025/hash/04c0399a47ee4107cd03b08f1f8c3eeb-Abstract-Conference.html
+58. RoutePlacer: An End-to-End Routability-Aware Placer with Graph Neural Network . KDD 2024, 2024. https://arxiv.org/abs/2406.02651
+59. Delving into Macro Placement with Reinforcement Learning . MLCAD 2021, 2021. https://arxiv.org/abs/2109.02587
+60. Automatic PCB Component Placement via GNN-Guided Similarity Retrieval Coupled with GAN-Based Completion . 2026 International Conference on Electronics Packaging and Hybrid Bond, 2026. https://doi.org/10.23919/ICEP-HBS69241.2026.11550476
 61. OmniLayout: A Schematic-Coupled Multimodal Benchmark for Constraint-Aware Geometric Reasoning in PCB Layout. arXiv 2607.03261, 2026. https://arxiv.org/abs/2607.03261
 62. OmniSch: A Multimodal PCB Schematic Benchmark For Structured Diagram Visual Reasoning. arXiv 2604.00270, 2026. https://arxiv.org/abs/2604.00270
 63. SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations. arXiv preprint 2605.30345, 2026. https://arxiv.org/abs/2605.30345
