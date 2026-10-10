@@ -13,3 +13,7 @@ The 94 source repositories behind the 119 test boards. Every board from these re
 ## mirror_inventory.csv
 
 Structural counts for all 1,157 mirror boards as loaded by KiCad 10 (`scripts/inventory.py`): file version, copper layers, outline size, footprints, pads, nets, segments, vias, track length, copper zones, unconnected connections, with the mirror's ground truth beside them for cross checking.
+
+## mirror_drc_refill.csv and mirror_pool.json
+
+`scripts/drc_batch.py --refill` runs KiCad 10's design rule check on every mirror board with copper zones refilled first (stale fills in old files otherwise produce thousands of false clearance errors). `scripts/filter_boards.py` turns that summary plus the inventory into mirror_pool.json: every board with a tier (clean, flagged, rejected), its rejection reasons, source repository, license, and whether it is held out because it is a test board or shares a repository with one. Training uses clean and flagged boards with held_out false.

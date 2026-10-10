@@ -27,6 +27,7 @@ A frozen slice of about 120 boards from the non test part of the PCBench pool, g
 ## Rules that apply to every source
 
 - Group by source repository or product, never by file. PCBench has 846 repositories for 1,194 designs, OLIMEX has up to 16 revisions of one product, Adafruit keeps revisions side by side, open-schematics repeats the same boards across schematic sheets.
+- DRC always runs with copper zones refilled first; stale fills in old files otherwise produce thousands of false clearance errors (issue 4).
 - One stripping rule for all inputs. The mirror's unrouted twin strips zones; PCBWorld keeps them. Decision pending in issue 5, then applied uniformly, or completion and wire length numbers will not match either baseline.
 - Splits are frozen as hash lists with pinned commits and shipped in the repository.
 - Scoring is scripted end to end: unconnected count zero for completion, copper rule DRC count, wire length and via count from pcbnew, compared with ground_truth.json. A handful of outputs per model still get eyeballed for degenerate routings that pass DRC.

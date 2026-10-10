@@ -64,3 +64,22 @@ What the pool looks like:
 - Copper zones on 991 boards, so the stripping rule in issue 5 has to handle zones on almost every board.
 - 14 boards have no board outline at all (zero area). They cannot be routed sensibly and fail DRC with an invalid outline, so the filter drops them.
 - 5 boards have no tracks, 180 have unconnected items in the human reference. 976 boards have tracks and zero unconnected items, which is the pool before the DRC filter in issue 4.
+
+## DRC and connectivity filter (issue 4, October 10)
+
+The earlier worry that 940 of 1,157 human boards carry clearance violations turned out to be stale zone fills. On a 30 board pilot, 4,134 of 4,304 clearance errors involved a zone; with `--refill-zones` the same boards showed 97 clearance errors and none involving a zone. The filter therefore runs DRC with zones refilled, on the board's own rules.
+
+Full run over 1,157 boards, 26 minutes on four workers, none failed. Only copper rule types count against a board; silkscreen, courtyard, text and library mismatch findings are recorded and ignored (those four alone account for about 150,000 of the findings).
+
+Tiers after the filter:
+
+- clean (connected after refill, valid outline, has tracks, no shorts or crossing tracks, zero clearance errors): 633 boards, of which 473 are available for training and 160 are held out
+- flagged (same, with 1 to 10 clearance errors): 68 boards, 57 for training
+- rejected: 456 boards. Reasons overlap: 240 unconnected after refill, 148 with shorts, crossing tracks or intersecting zones, 137 without a valid outline (the inventory's zero area check caught only 14 of these; DRC also catches open and self intersecting outlines), 41 with more than 10 clearance errors, 5 with no tracks.
+
+Training pool from the mirror: 530 boards (473 clean plus 57 flagged). Licenses in that pool: 328 none recorded, 64 MIT, 53 no assertion, 43 GPL 3.0, 8 CC BY SA 4.0, 6 Apache 2.0. Only the licensed part can ever be redistributed.
+
+Two findings that change the evaluation protocol (carried to issue 7):
+
+1. Refilling zones changes connectivity on 69 boards. The clearest case is the ADC PCM4202 board, whose analog ground ran entirely through a zone fill that KiCad 10 no longer regenerates the same way, leaving 149 unconnected items. Since the stripping rule drops fills and refills them after routing, a board whose fills cannot be regenerated is not a valid problem.
+2. 22 of the 119 PCBWorld test boards fail our filter: 14 are unconnected after refill, 5 have shorts or crossing tracks, 5 have no valid outline. PCBWorld processed its boards through KiCad 9 with its own fixes before declaring them clean, so the two filters disagree on 145 of its 678 boards, 108 of them over post refill connectivity. The test protocol will report the 97 clean test boards as the primary set and all 119 as a secondary set with completion measured against the human reference's own connectivity.
