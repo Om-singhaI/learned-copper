@@ -1,0 +1,5810 @@
+{
+ "size": 256,
+ "boards": [
+  {
+   "board_id": "1-Wire-Wing-pcb_1-Wire_Wing",
+   "source_repo": "github.com/j3270/1-wire-wing-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.2869
+  },
+  {
+   "board_id": "16x12-bits-I2C_I2C_Servo",
+   "source_repo": "github.com/cherault/16x12-bits-i2c",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.3025
+  },
+  {
+   "board_id": "2d_conduction_sk9822-matrix",
+   "source_repo": "github.com/vectorspacehq/2d_conduction",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 59,
+   "mm_per_px": 0.3754
+  },
+  {
+   "board_id": "4-port-usb-hub_4port-usb-hub",
+   "source_repo": "github.com/ltomov/4-port-usb-hub",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 31,
+   "mm_per_px": 0.2661
+  },
+  {
+   "board_id": "4N35-TTL-Serial-Optoisolator_4N35-TTL-Serial-Optoisolator",
+   "source_repo": "github.com/pepaslabs/4n35-ttl-serial-optoisolator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.167
+  },
+  {
+   "board_id": "6N137-TTL-Serial-Optoisolator_6N137-TTL-Serial-Optoisolator",
+   "source_repo": "github.com/pepaslabs/6n137-ttl-serial-optoisolator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.167
+  },
+  {
+   "board_id": "6volt-5W-solar-cc_6vleadacidsolar",
+   "source_repo": "github.com/hwstar/6volt-5w-solar-cc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "74Logic_SA_ADC_SA-ADC",
+   "source_repo": "github.com/schilkp/74logic_sa_adc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3932
+  },
+  {
+   "board_id": "96boards-sensors_Sensors",
+   "source_repo": "github.com/96boards/96boards-sensors",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3488
+  },
+  {
+   "board_id": "ABOVISP_ABOVISP",
+   "source_repo": "github.com/jglim/abovisp",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1255
+  },
+  {
+   "board_id": "ADC-DAC-16bit_ADC-DAC-16bit",
+   "source_repo": "github.com/valerionew/adc-dac-16bit",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 11,
+   "mm_per_px": 0.098
+  },
+  {
+   "board_id": "ADC-PCM4202-SE_ADC-PCM4202-SE",
+   "source_repo": "github.com/ohdsp/adc-pcm4202-se",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "APC_AtariPunkConsole",
+   "source_repo": "github.com/uepro/apc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.3695
+  },
+  {
+   "board_id": "AS5043-Encoder_sensor-board",
+   "source_repo": "github.com/longhairedhacker/as5043-encoder",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1473
+  },
+  {
+   "board_id": "ATmega32_ExploreUltraAvrDevKit_40pin_AVRMCU",
+   "source_repo": "github.com/exploreembedded/atmega32_exploreultraavrdevkit",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.3078
+  },
+  {
+   "board_id": "ATtiny461Breakout_ATTiny461DevBoard",
+   "source_repo": "github.com/ffleurey/attiny461breakout",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.1359
+  },
+  {
+   "board_id": "AVR-ISP_level-shifter_AVR-ISP_level-shifter",
+   "source_repo": "github.com/madworm/avr-isp_level-shifter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.1807
+  },
+  {
+   "board_id": "AVR-ISP_pogo-plug_1.27mm_AVR-ISP_pogo-plug_1.27mm",
+   "source_repo": "github.com/madworm/avr-isp_pogo-plug_1.27mm",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0783
+  },
+  {
+   "board_id": "AVR-Playground_hello_world",
+   "source_repo": "github.com/bonfacekilz/avr-playground",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.2138
+  },
+  {
+   "board_id": "AVR-ZIF-Programmer_AVR-ZIF-Prog",
+   "source_repo": "github.com/jbtronics/avr-zif-programmer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.3962
+  },
+  {
+   "board_id": "Amiga-A1012-PCB_Amiga-A1012",
+   "source_repo": "github.com/sgust/amiga-a1012-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.3213
+  },
+  {
+   "board_id": "AmpOne_dev-AmpOne",
+   "source_repo": "github.com/ohdsp/ampone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "AnalogThermometer_AnalogThermometer",
+   "source_repo": "github.com/devttys0/analogthermometer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1045
+  },
+  {
+   "board_id": "Apple-M0110-BT_Apple M0110",
+   "source_repo": "github.com/anthonyagarza/apple-m0110-bt",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.1288
+  },
+  {
+   "board_id": "Arduino-Theremin_arduino-theremin-v1",
+   "source_repo": "github.com/wickerbox/arduino-theremin",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.2921
+  },
+  {
+   "board_id": "Arduino_Lipo_Storage_Discharger_Lipo_Storage_Discharger",
+   "source_repo": "github.com/kaeptnbalu/arduino_lipo_storage_discharger",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.4064
+  },
+  {
+   "board_id": "Atmel-ICE-Header-Adapter_ice header adapter pcb",
+   "source_repo": "github.com/bobc/atmel-ice-header-adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "Avem_Hardware_Avem_demo",
+   "source_repo": "github.com/avem-labs/avem_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.3017
+  },
+  {
+   "board_id": "AzizLight_AzizLight",
+   "source_repo": "github.com/devttys0/azizlight",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2879
+  },
+  {
+   "board_id": "BB-PWR-3608_BB-PWR-3608_revA",
+   "source_repo": "github.com/olimex/bb-pwr-3608",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0633
+  },
+  {
+   "board_id": "BB-PWR-8009_BB-PWR-8009_revA",
+   "source_repo": "github.com/olimex/bb-pwr-8009",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0479
+  },
+  {
+   "board_id": "BB-PWR-8113_BB-PWR-8113_revA",
+   "source_repo": "github.com/olimex/bb-pwr-8113",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.0817
+  },
+  {
+   "board_id": "BGM111-External-Programmer_BGM111_Programmer",
+   "source_repo": "github.com/embeddeddesign/bgm111-external-programmer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 4,
+   "mm_per_px": 0.1317
+  },
+  {
+   "board_id": "BML-Badges_BML-Badges",
+   "source_repo": "github.com/calmdownkarm/bml-badges",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.3752
+  },
+  {
+   "board_id": "BML-Badges_BML_01",
+   "source_repo": "github.com/calmdownkarm/bml-badges",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1878
+  },
+  {
+   "board_id": "BMS-bq76940_EvaluationsBoard",
+   "source_repo": "github.com/kevinxusz/bms-bq76940",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3103
+  },
+  {
+   "board_id": "Baofeng-Interface_BaofengInterface",
+   "source_repo": "github.com/ag6gr/baofeng-interface",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 10,
+   "mm_per_px": 0.1047
+  },
+  {
+   "board_id": "Baofeng-Interface_BaofengInterfaceIsolated",
+   "source_repo": "github.com/ag6gr/baofeng-interface",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.1838
+  },
+  {
+   "board_id": "BirdAttractor_BirdAttractor_RevA",
+   "source_repo": "github.com/gatechipdl/birdattractor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "BirdAttractor_BirdAttractor_RevC",
+   "source_repo": "github.com/gatechipdl/birdattractor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3129
+  },
+  {
+   "board_id": "Biscay_Blueeye_mcu",
+   "source_repo": "github.com/team-impulse/biscay_blueeye",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "Biscay_Blueeye_sipm-comp",
+   "source_repo": "github.com/team-impulse/biscay_blueeye",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "Biscay_Blueeye_sipm-fpga",
+   "source_repo": "github.com/team-impulse/biscay_blueeye",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 49,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "Blink-Eras_AVR_ISP_Pogo",
+   "source_repo": "github.com/kbob/blink-eras",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0943
+  },
+  {
+   "board_id": "Box0-hv-analog-breakoutboard_breakout",
+   "source_repo": "github.com/riktw/box0-hv-analog-breakoutboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.2873
+  },
+  {
+   "board_id": "BrushlessESC_esc",
+   "source_repo": "github.com/tynogc/brushlessesc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 50,
+   "mm_per_px": 0.2482
+  },
+  {
+   "board_id": "Brushless_ESC_Brushless_ESC",
+   "source_repo": "github.com/fordprfkt/brushless_esc",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 50,
+   "mm_per_px": 0.2588
+  },
+  {
+   "board_id": "C-BISCUIT_crowbar",
+   "source_repo": "github.com/allaboutcircuits/c-biscuit",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.1529
+  },
+  {
+   "board_id": "CAL430FR_CAL430F",
+   "source_repo": "github.com/kentn/cal430fr",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.148
+  },
+  {
+   "board_id": "CAL430FR_CAL430F_watch",
+   "source_repo": "github.com/kentn/cal430fr",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.1869
+  },
+  {
+   "board_id": "Camera-Modules_LG-G2-Camera-Shim",
+   "source_repo": "github.com/cyrozap/camera-modules",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 24,
+   "mm_per_px": 0.0766
+  },
+  {
+   "board_id": "Cherry-Mx-Bitboard_Cherry Mx Bitboard",
+   "source_repo": "github.com/ogatatsu/cherry-mx-bitboard",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 3,
+   "mm_per_px": 0.0785
+  },
+  {
+   "board_id": "CubeSAT-Reaction-Wheel_Edison_Motor_Servo",
+   "source_repo": "github.com/jalouke/cubesat-reaction-wheel",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1151
+  },
+  {
+   "board_id": "CubeSAT-Reaction-Wheel__autosave-GPIO to motor",
+   "source_repo": "github.com/jalouke/cubesat-reaction-wheel",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.2218
+  },
+  {
+   "board_id": "DC25_DC25",
+   "source_repo": "github.com/teambazooka/dc25",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.417
+  },
+  {
+   "board_id": "DIYDAC_DIYDAC",
+   "source_repo": "github.com/alexanderbrevig/diydac",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.1047
+  },
+  {
+   "board_id": "DPS-1200FB_Adapter_Adapter",
+   "source_repo": "github.com/jasiek/dps-1200fb_adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.3449
+  },
+  {
+   "board_id": "DSKY-alarm-panel-replica_DSKY_alarm",
+   "source_repo": "github.com/rrainey/dsky-alarm-panel-replica",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.4166
+  },
+  {
+   "board_id": "DaWeather---Project__autosave-CarteDaWeather",
+   "source_repo": "github.com/daweather/daweather---project",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.2294
+  },
+  {
+   "board_id": "Dekada_dekada",
+   "source_repo": "github.com/zigastegu/dekada",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.2047
+  },
+  {
+   "board_id": "Dekada_dekada_TopoR_curves",
+   "source_repo": "github.com/zigastegu/dekada",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.2047
+  },
+  {
+   "board_id": "DerKnopf_digi-pot",
+   "source_repo": "github.com/hzeller/derknopf",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.1277
+  },
+  {
+   "board_id": "DerKnopf_led-ring",
+   "source_repo": "github.com/hzeller/derknopf",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1311
+  },
+  {
+   "board_id": "DerKnopf_power-supply",
+   "source_repo": "github.com/hzeller/derknopf",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.227
+  },
+  {
+   "board_id": "DiscoDanceFloorV1_DiscoDongle",
+   "source_repo": "github.com/jgillick/discodancefloorv1",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.2398
+  },
+  {
+   "board_id": "DualLM317BenchSupply_DualLM317BenchSupply",
+   "source_repo": "github.com/pepaslabs/duallm317benchsupply",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.409
+  },
+  {
+   "board_id": "DustSensorShield_DustSensorShield",
+   "source_repo": "github.com/danfei/dustsensorshield",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "E202VAR-Natural-Radio-Receiver_e202var-vlf-radio-receiver",
+   "source_repo": "github.com/wickerbox/e202var-natural-radio-receiver",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.3337
+  },
+  {
+   "board_id": "ESP-12-breakout_ESP12E-breakout",
+   "source_repo": "github.com/black-electronics/esp-12-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.13
+  },
+  {
+   "board_id": "ESP-Breakout_ESP-Breakout",
+   "source_repo": "github.com/baoshi/esp-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.2086
+  },
+  {
+   "board_id": "ESP07-Breakout_ESP07-Breakout",
+   "source_repo": "github.com/jbtronics/esp07-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2036
+  },
+  {
+   "board_id": "ESP32-Module-Breakout_ESP32S-breakout",
+   "source_repo": "github.com/black-electronics/esp32-module-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 38,
+   "mm_per_px": 0.2028
+  },
+  {
+   "board_id": "ESP8266-MQTT-battery-monitor-hw_battery-monitor",
+   "source_repo": "github.com/hwstar/esp8266-mqtt-battery-monitor-hw",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "ESPLux_Board",
+   "source_repo": "github.com/pretenda/esplux",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.2875
+  },
+  {
+   "board_id": "ESP_BaPoTeSta_ESP_BaPoTeSta",
+   "source_repo": "github.com/schumar/esp_bapotesta",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 31,
+   "mm_per_px": 0.2036
+  },
+  {
+   "board_id": "ESP_nRF_Relay_Relay_WiFi_nRF24",
+   "source_repo": "github.com/dobrman/esp_nrf_relay",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 18,
+   "mm_per_px": 0.2086
+  },
+  {
+   "board_id": "ESPkit-01_espkit-01",
+   "source_repo": "github.com/mage0r/espkit-01",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 18,
+   "mm_per_px": 0.1467
+  },
+  {
+   "board_id": "Eggbot-Spherebot-polargraph-Controller_eggbot-spherebot-polargraph-controller",
+   "source_repo": "github.com/markjb/eggbot-spherebot-polargraph-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.3439
+  },
+  {
+   "board_id": "Electronics-MainBoard_MainBoard",
+   "source_repo": "github.com/bluesink/electronics-mainboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4924
+  },
+  {
+   "board_id": "EncoderBoard_Enc_Pan_Led",
+   "source_repo": "github.com/hexeguitar/encoderboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 44,
+   "mm_per_px": 0.1727
+  },
+  {
+   "board_id": "EtherCAT_shield_v1_EtherCAT_shield_v1",
+   "source_repo": "github.com/yuqlid/ethercat_shield_v1",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.3337
+  },
+  {
+   "board_id": "FRM16_Relay_Module_I2C_Controller_relay_controller",
+   "source_repo": "github.com/junes-phd/frm16_relay_module_i2c_controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.563
+  },
+  {
+   "board_id": "FT231X_breakout_FTDI_FT231XS-U_Breakout",
+   "source_repo": "github.com/deuxvis/ft231x_breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.1526
+  },
+  {
+   "board_id": "FlashProgrammer_flash_programmer",
+   "source_repo": "github.com/jdisanti/flashprogrammer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2502
+  },
+  {
+   "board_id": "FogDrive_attiny45_slim",
+   "source_repo": "github.com/dlfw/fogdrive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0785
+  },
+  {
+   "board_id": "HIDIRT-for-STM32F103C8T6-DevBoard_STM32F103C8T6-DEV-BOARD-addon",
+   "source_repo": "github.com/pikim/hidirt-for-stm32f103c8t6-devboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 27,
+   "mm_per_px": 0.25
+  },
+  {
+   "board_id": "HID_PID_controller",
+   "source_repo": "github.com/pholat/hid_pid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 50,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "HW-AC-Emeter_ac-power-monitor",
+   "source_repo": "github.com/hwstar/hw-ac-emeter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "Hardware-done-with-kicad_AVRlearn",
+   "source_repo": "github.com/jstodberg/hardware-done-with-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.2815
+  },
+  {
+   "board_id": "Hardware_Playground_BL_PCB_latest",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5621
+  },
+  {
+   "board_id": "Hardware_Playground_NRF52832_Touch_Switch_Power_Supply",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 37,
+   "mm_per_px": 0.193
+  },
+  {
+   "board_id": "Hardware_Playground_Touch_Switch_1ch_PCB",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.179
+  },
+  {
+   "board_id": "Hardware_Playground_buck_led_driver",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1031
+  },
+  {
+   "board_id": "Hardware_Playground_esp8266_uno",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.2815
+  },
+  {
+   "board_id": "Hardware_Playground_esp8266_uno_relay",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2824
+  },
+  {
+   "board_id": "Hardware_Playground_hy_adapter",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0543
+  },
+  {
+   "board_id": "Hardware_Playground_leds_array",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.3794
+  },
+  {
+   "board_id": "Hardware_Playground_minimal_node_rfm69w",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.1135
+  },
+  {
+   "board_id": "Hardware_Playground_nrf52832_uno",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2821
+  },
+  {
+   "board_id": "Hardware_Playground_orange_pi_zero_node",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.1973
+  },
+  {
+   "board_id": "Hardware_Playground_pro_mini",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.2076
+  },
+  {
+   "board_id": "Hardware_Playground_rfm69w_adapter",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.0826
+  },
+  {
+   "board_id": "Hardware_Playground_rpi_zero",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.267
+  },
+  {
+   "board_id": "Hardware_Playground_rpi_zero_ws2812",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 8,
+   "mm_per_px": 0.267
+  },
+  {
+   "board_id": "Hardware_Playground_serial_gw_ATMEGA328P",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.1828
+  },
+  {
+   "board_id": "Hardware_Playground_usb_shield",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.2877
+  },
+  {
+   "board_id": "Hardware_Playground_wifi_lights",
+   "source_repo": "github.com/mtiutiu/hardware_playground",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.1971
+  },
+  {
+   "board_id": "HaveSome_PCB_HaveSomePCB",
+   "source_repo": "github.com/deuxvis/havesome_pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 3,
+   "mm_per_px": 0.0761
+  },
+  {
+   "board_id": "HellScribe_HellScribe",
+   "source_repo": "github.com/devttys0/hellscribe",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.7126
+  },
+  {
+   "board_id": "HillhacksLantern_LEDLantern",
+   "source_repo": "github.com/niteshkadyan/hillhackslantern",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.4965
+  },
+  {
+   "board_id": "Hornbill-ESP32-DEV_Hornbill Devboard",
+   "source_repo": "github.com/exploreembedded/hornbill-esp32-dev",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 56,
+   "mm_per_px": 0.2499
+  },
+  {
+   "board_id": "Hypfer-RGB-W-LED-Controller_led_strip_controller",
+   "source_repo": "github.com/duckle29/hypfer-rgb-w-led-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "I2CTempsensor_sensors",
+   "source_repo": "github.com/nickjkl/i2ctempsensor",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.0889
+  },
+  {
+   "board_id": "ID-FIX_scanConnect",
+   "source_repo": "github.com/volab/id-fix",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.1455
+  },
+  {
+   "board_id": "IR-Transponder-ATTiny85-v2_Transponder_v2",
+   "source_repo": "github.com/aether4e0a/ir-transponder-attiny85-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.0949
+  },
+  {
+   "board_id": "ISO-port_ch340-usb-serial-isolated",
+   "source_repo": "github.com/hwstar/iso-port",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 24,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "Inhibition_amplifier.kicad_pcb-CNC version (with some problems)",
+   "source_repo": "github.com/marinosk/inhibition",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 51,
+   "mm_per_px": 0.4064
+  },
+  {
+   "board_id": "Inkjet_InkjetBreakout",
+   "source_repo": "github.com/danielprint/inkjet",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1253
+  },
+  {
+   "board_id": "Inkjet_InkjetDriver",
+   "source_repo": "github.com/danielprint/inkjet",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.3648
+  },
+  {
+   "board_id": "Inkjet__autosave-InkjetDriver",
+   "source_repo": "github.com/danielprint/inkjet",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.3648
+  },
+  {
+   "board_id": "JLink-SWD_JLink-SWD",
+   "source_repo": "github.com/baoshi/jlink-swd",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.1328
+  },
+  {
+   "board_id": "Kefersender_UKW TX",
+   "source_repo": "github.com/virtex7/kefersender",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.1582
+  },
+  {
+   "board_id": "Keyboard_PCB_Keyboard",
+   "source_repo": "github.com/namlit/keyboard_pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.1891
+  },
+  {
+   "board_id": "KiCad-LTC6802-2_main",
+   "source_repo": "github.com/johaa1993/kicad-ltc6802-2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.2088
+  },
+  {
+   "board_id": "KiCad-Like-a-Pro-Tutorial_rf24-breakout-v1",
+   "source_repo": "github.com/wicker/kicad-like-a-pro-tutorial",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1357
+  },
+  {
+   "board_id": "KiwiSDR_PCB_ant",
+   "source_repo": "github.com/mfkiwl/kiwisdr_pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.5662
+  },
+  {
+   "board_id": "LAUNCHXL-F28027-isolation-PCB_project1",
+   "source_repo": "github.com/stawiski/launchxl-f28027-isolation-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.2033
+  },
+  {
+   "board_id": "LED-Square_PT4115_LED-Square_PT4115",
+   "source_repo": "github.com/madworm/led-square_pt4115",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "LED_port-status_LED_port-status",
+   "source_repo": "github.com/madworm/led_port-status",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.0979
+  },
+  {
+   "board_id": "LPC2148_Stick_LPC2148_stick",
+   "source_repo": "github.com/exploreembedded/lpc2148_stick",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5416
+  },
+  {
+   "board_id": "LPC2148_Stick__autosave-LPC2148_stick",
+   "source_repo": "github.com/exploreembedded/lpc2148_stick",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5416
+  },
+  {
+   "board_id": "LT3652EvalBoard_LT3652EvalBoard",
+   "source_repo": "github.com/malcolmspiteri/lt3652evalboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.2047
+  },
+  {
+   "board_id": "LVDS2TMDS_LVDS2TMDS",
+   "source_repo": "github.com/chriz2600/lvds2tmds",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.1799
+  },
+  {
+   "board_id": "LiFePO4-Charge-Controller_LiFePO4-Charge-Controller",
+   "source_repo": "github.com/spmp/lifepo4-charge-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 45,
+   "mm_per_px": 0.2718
+  },
+  {
+   "board_id": "LimitSwitchesPlugin_LimitSwitchesPlugin",
+   "source_repo": "github.com/itadinanta/limitswitchesplugin",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.2711
+  },
+  {
+   "board_id": "LoRaCatKitty_NodeLoRaGroveKitty",
+   "source_repo": "github.com/electroniccats/loracatkitty",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 35,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "LoRaCatTrack_GPSLoRa",
+   "source_repo": "github.com/electroniccats/loracattrack",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "LongPixel_AnalogDriverMini",
+   "source_repo": "github.com/maniacallabs/longpixel",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.2016
+  },
+  {
+   "board_id": "MAGFest-2017-Swadges_magfest_badges",
+   "source_repo": "github.com/magfest/magfest-2017-swadges",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.4096
+  },
+  {
+   "board_id": "MAPone_MAP_append",
+   "source_repo": "github.com/makersasylumindia/mapone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.2873
+  },
+  {
+   "board_id": "MAPone_MAPone",
+   "source_repo": "github.com/makersasylumindia/mapone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.2873
+  },
+  {
+   "board_id": "MAVRIC_Hardware_ArduinoPracticeBoard",
+   "source_repo": "github.com/isu-mavric/mavric_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.1573
+  },
+  {
+   "board_id": "MAVRIC_Hardware_Motherboard",
+   "source_repo": "github.com/isu-mavric/mavric_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.5908
+  },
+  {
+   "board_id": "MAVRIC_Hardware_SoilBoard",
+   "source_repo": "github.com/isu-mavric/mavric_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.1594
+  },
+  {
+   "board_id": "MAVRIC_Hardware__autosave-Motherboard",
+   "source_repo": "github.com/isu-mavric/mavric_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.5908
+  },
+  {
+   "board_id": "MAVRIC_Hardware_pcieduino",
+   "source_repo": "github.com/isu-mavric/mavric_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.2092
+  },
+  {
+   "board_id": "MOD-MPU9150_mod-mpu9150",
+   "source_repo": "github.com/olimex/mod-mpu9150",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.0921
+  },
+  {
+   "board_id": "MSGEQ7-Breakout-Board_MSGEQ7_Breakout_Board",
+   "source_repo": "github.com/rheingoldheavy/msgeq7-breakout-board",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1769
+  },
+  {
+   "board_id": "MeArm-Wireless-PCB_MeArmWireless",
+   "source_repo": "github.com/mimeindustries/mearm-wireless-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2668
+  },
+  {
+   "board_id": "Mechaduino-DR_Mechaduino DR 1.01",
+   "source_repo": "github.com/mountaindog65/mechaduino-dr",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2342
+  },
+  {
+   "board_id": "Minitel_bbb-adapter",
+   "source_repo": "github.com/phooky/minitel",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "Minitel_driver_board",
+   "source_repo": "github.com/phooky/minitel",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 31,
+   "mm_per_px": 0.3441
+  },
+  {
+   "board_id": "MixSID_mixsid",
+   "source_repo": "github.com/hbekel/mixsid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2557
+  },
+  {
+   "board_id": "MySRaspiGW_MySRaspiGW",
+   "source_repo": "github.com/emc2cube/mysraspigw",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0492
+  },
+  {
+   "board_id": "MySRaspiGW_MySRaspiGW_PA_LNA",
+   "source_repo": "github.com/emc2cube/mysraspigw",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0492
+  },
+  {
+   "board_id": "MySRaspiGW_MySRaspiGW_PA_LNA_Pimoroni",
+   "source_repo": "github.com/emc2cube/mysraspigw",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0639
+  },
+  {
+   "board_id": "MySRaspiGW_MySRaspiGW_Pimoroni",
+   "source_repo": "github.com/emc2cube/mysraspigw",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0668
+  },
+  {
+   "board_id": "MySensorsNode_LE-BOX-0028",
+   "source_repo": "github.com/fallberg/mysensorsnode",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 48,
+   "mm_per_px": 0.3941
+  },
+  {
+   "board_id": "NRC2016_banked_ram",
+   "source_repo": "github.com/alangarf/nrc2016",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 54,
+   "mm_per_px": 0.4274
+  },
+  {
+   "board_id": "NRC2016_usb_sio",
+   "source_repo": "github.com/alangarf/nrc2016",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 50,
+   "mm_per_px": 0.4274
+  },
+  {
+   "board_id": "NRC2016_z80",
+   "source_repo": "github.com/alangarf/nrc2016",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 57,
+   "mm_per_px": 0.4584
+  },
+  {
+   "board_id": "NavigationThing_NavigationThing",
+   "source_repo": "github.com/yaqwsx/navigationthing",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.2629
+  },
+  {
+   "board_id": "NavigationThing_NavigationThingBacklight",
+   "source_repo": "github.com/yaqwsx/navigationthing",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0908
+  },
+  {
+   "board_id": "NeoWall_NeoWall",
+   "source_repo": "github.com/baoshi/neowall",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.2875
+  },
+  {
+   "board_id": "Neptune-Hardware_DataAcquisitionBoard",
+   "source_repo": "github.com/cidarlab/neptune-hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "NiMH-Charger_NiMH Charger",
+   "source_repo": "github.com/deefstes/nimh-charger",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.3856
+  },
+  {
+   "board_id": "OLD-Stepper-motor-board-design-project_Stepper motor driver",
+   "source_repo": "github.com/jakevidal/old-stepper-motor-board-design-project",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 24,
+   "mm_per_px": 0.1474
+  },
+  {
+   "board_id": "Omega2-Berrydock_berrydock-mini",
+   "source_repo": "github.com/berryelectronics/omega2-berrydock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "Omega2-mini-dock_Omega2 mini-dock",
+   "source_repo": "github.com/werecatf/omega2-mini-dock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.2505
+  },
+  {
+   "board_id": "OpAmpPassXsistorBenchSupply_OpAmpPassXsistorBenchSupply",
+   "source_repo": "github.com/pepaslabs/opamppassxsistorbenchsupply",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.409
+  },
+  {
+   "board_id": "Open-Source-Power-Supply_PowerSupply_PCB",
+   "source_repo": "github.com/ardelean-calin/open-source-power-supply",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.3572
+  },
+  {
+   "board_id": "OpenBot_openbot",
+   "source_repo": "github.com/adnbr/openbot",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.219
+  },
+  {
+   "board_id": "OpenVNAVI_motor unit",
+   "source_repo": "github.com/davidanton/openvnavi",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0722
+  },
+  {
+   "board_id": "P8000_WDC_Emulator_P8000_WDC_Emulator",
+   "source_repo": "github.com/ollil/p8000_wdc_emulator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6589
+  },
+  {
+   "board_id": "PCB_constant_current_ac_hv",
+   "source_repo": "github.com/theopenbar/pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.3326
+  },
+  {
+   "board_id": "PCB_serie_led_strip",
+   "source_repo": "github.com/theopenbar/pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.3736
+  },
+  {
+   "board_id": "PCB_small_halogen_replacement",
+   "source_repo": "github.com/theopenbar/pcb",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "PGA2311_pga2311",
+   "source_repo": "github.com/jjrh/pga2311",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "POV_POV",
+   "source_repo": "github.com/hemalchevli/pov",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.2852
+  },
+  {
+   "board_id": "PWRmeter_PWMeter",
+   "source_repo": "github.com/f6itu/pwrmeter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "Paperino_HW_Paperino_shield",
+   "source_repo": "github.com/johnnykaramello/paperino_hw",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2875
+  },
+  {
+   "board_id": "Paperino_HW_paperino_breakout",
+   "source_repo": "github.com/johnnykaramello/paperino_hw",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1782
+  },
+  {
+   "board_id": "Paperino_HW_paperino_module",
+   "source_repo": "github.com/johnnykaramello/paperino_hw",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.1047
+  },
+  {
+   "board_id": "Phased-Array-Microphone-using-FPGA_SateliteMicrophone",
+   "source_repo": "github.com/leastsignificantbit/phased-array-microphone-using-fpga",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "Photodiode_dethead",
+   "source_repo": "github.com/svalbardhab/photodiode",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 14,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "PixyWirelessShield_Shield PIXY",
+   "source_repo": "github.com/aeracoop/pixywirelessshield",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.1516
+  },
+  {
+   "board_id": "PmodHDMIIn_PmodHDMIIn",
+   "source_repo": "github.com/twam/pmodhdmiin",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.1772
+  },
+  {
+   "board_id": "PowerGloveUHID_sensor_board",
+   "source_repo": "github.com/nolanmoore/powergloveuhid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 12,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "Practicas-Curso-Kicad_Fusari_Diego",
+   "source_repo": "github.com/inti-cmnb/practicas-curso-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 4,
+   "mm_per_px": 0.1125
+  },
+  {
+   "board_id": "Practicas-Curso-Kicad_Ivan-Dmytrow",
+   "source_repo": "github.com/inti-cmnb/practicas-curso-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 4,
+   "mm_per_px": 0.1125
+  },
+  {
+   "board_id": "Practicas-Curso-Kicad_Salguero_Federico2",
+   "source_repo": "github.com/inti-cmnb/practicas-curso-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2505
+  },
+  {
+   "board_id": "Practicas-Curso-Kicad_mainenti_miguel",
+   "source_repo": "github.com/inti-cmnb/practicas-curso-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 4,
+   "mm_per_px": 0.112
+  },
+  {
+   "board_id": "Prototyping_Workshop_Prototyping_PCB",
+   "source_repo": "github.com/drc3p0/prototyping_workshop",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.6561
+  },
+  {
+   "board_id": "PsuFanController_FanController",
+   "source_repo": "github.com/bbtinkerer/psufancontroller",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1775
+  },
+  {
+   "board_id": "QRPCard_QRPCard",
+   "source_repo": "github.com/devttys0/qrpcard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.3577
+  },
+  {
+   "board_id": "R1002_R1002",
+   "source_repo": "github.com/pluggee/r1002",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.1932
+  },
+  {
+   "board_id": "RC2014_RC2014 IDE",
+   "source_repo": "github.com/tebl/rc2014",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "RC2014_RC2014 RAM",
+   "source_repo": "github.com/tebl/rc2014",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "RC2014_RC2014 Tandy Sound Card",
+   "source_repo": "github.com/tebl/rc2014",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 48,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "RFM69-PowerMonitor_RFM69-PowerMonitor",
+   "source_repo": "github.com/jasiek/rfm69-powermonitor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.2342
+  },
+  {
+   "board_id": "RFM69HCW_ATSHA204A_Breakout_RFM69HCW_ATSHA204A_Breakout",
+   "source_repo": "github.com/kvoit/rfm69hcw_atsha204a_breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1203
+  },
+  {
+   "board_id": "RGBMatrixPanelCPLD-PhotonBackpack_RGBMatrixPanel_CPLD_negative",
+   "source_repo": "github.com/reclaimerlabs/rgbmatrixpanelcpld-photonbackpack",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.2925
+  },
+  {
+   "board_id": "RGBMatrixPanelCPLD-PhotonBackpack_RGBMatrixPanel_CPLD_positive",
+   "source_repo": "github.com/reclaimerlabs/rgbmatrixpanelcpld-photonbackpack",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.2925
+  },
+  {
+   "board_id": "RPi-PWM-Fan-interface_RPi PWM Fan interface",
+   "source_repo": "github.com/roens/rpi-pwm-fan-interface",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 3,
+   "mm_per_px": 0.0849
+  },
+  {
+   "board_id": "RX5808_diversityModule",
+   "source_repo": "github.com/virtex7/rx5808",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.2322
+  },
+  {
+   "board_id": "RX5808_rx5808_4button",
+   "source_repo": "github.com/virtex7/rx5808",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 47,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "Raspberry-Pi-Soft-Power-Controller_Switching Supply TPS563208 MCI",
+   "source_repo": "github.com/baldengineer/raspberry-pi-soft-power-controller",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.1852
+  },
+  {
+   "board_id": "RaspberryPi-PoE_PoELLi_PI",
+   "source_repo": "github.com/ojousima/raspberrypi-poe",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3488
+  },
+  {
+   "board_id": "ReST32_ReST RRD-FGC-Adapter",
+   "source_repo": "github.com/berryelectronics/rest32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.1789
+  },
+  {
+   "board_id": "ReST32_ReST SD-Module",
+   "source_repo": "github.com/berryelectronics/rest32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.164
+  },
+  {
+   "board_id": "RoBoC_RoboticsMKII",
+   "source_repo": "github.com/kolijnwolfaardt/roboc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4064
+  },
+  {
+   "board_id": "S1G-Mod_JST_Adapter",
+   "source_repo": "github.com/adamjvr/s1g-mod",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1266
+  },
+  {
+   "board_id": "S4A-Mini-board_s4a-mini-board",
+   "source_repo": "github.com/sindormirnet/s4a-mini-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.219
+  },
+  {
+   "board_id": "SIUSBSC_SIUSBSC",
+   "source_repo": "github.com/jcreedon/siusbsc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 21,
+   "mm_per_px": 0.1042
+  },
+  {
+   "board_id": "SMDBreakouts_smd_breakout",
+   "source_repo": "github.com/igbc/smdbreakouts",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.0891
+  },
+  {
+   "board_id": "SMDBreakouts_smd_breakout_quad",
+   "source_repo": "github.com/igbc/smdbreakouts",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.0891
+  },
+  {
+   "board_id": "SNAP-Badge_SNAP_badge",
+   "source_repo": "github.com/davidewing/snap-badge",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5211
+  },
+  {
+   "board_id": "SPI-shift-register-CS_SPI shift register CS",
+   "source_repo": "github.com/sembazuru/spi-shift-register-cs",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.4689
+  },
+  {
+   "board_id": "STM32F303_LQFP48_STM32_LQFP48",
+   "source_repo": "github.com/meerstern/stm32f303_lqfp48",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "STM32F373_LQFP48_STM32_LQFP48",
+   "source_repo": "github.com/meerstern/stm32f373_lqfp48",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "Shift-in-32-HC165_shift-in",
+   "source_repo": "github.com/lhartmann/shift-in-32-hc165",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.4482
+  },
+  {
+   "board_id": "Shift-out-32-HC595_Shift-out",
+   "source_repo": "github.com/lhartmann/shift-out-32-hc595",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.4795
+  },
+  {
+   "board_id": "Simple_84_Keyboard_84",
+   "source_repo": "github.com/adamyoung1234/simple_84_keyboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.2602
+  },
+  {
+   "board_id": "Smart-Watch_BON-PCB",
+   "source_repo": "github.com/supercap2f/smart-watch",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 11,
+   "mm_per_px": 0.1461
+  },
+  {
+   "board_id": "SmartLaserCO2-PCB_OptAdjust",
+   "source_repo": "github.com/smartdiys/smartlaserco2-pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1725
+  },
+  {
+   "board_id": "SmartLaserCO2-PCB_SmartLaserShield",
+   "source_repo": "github.com/smartdiys/smartlaserco2-pcb",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.3242
+  },
+  {
+   "board_id": "SmartLaserCO2-PCB_WaterCool",
+   "source_repo": "github.com/smartdiys/smartlaserco2-pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.1534
+  },
+  {
+   "board_id": "SmartLaserCO2-PCB__autosave-SmartLaserShield",
+   "source_repo": "github.com/smartdiys/smartlaserco2-pcb",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.3242
+  },
+  {
+   "board_id": "Solare-BQ24210_Solare-BQ24210",
+   "source_repo": "github.com/adamjvr/solare-bq24210",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1117
+  },
+  {
+   "board_id": "SparkSwitch_SparkProtectionSwitch",
+   "source_repo": "github.com/vedderb/sparkswitch",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "Starburst-One_alpha",
+   "source_repo": "github.com/74hc595/starburst-one",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.0943
+  },
+  {
+   "board_id": "Starling_Starling_V1",
+   "source_repo": "github.com/exploreembedded/starling",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 43,
+   "mm_per_px": 0.2467
+  },
+  {
+   "board_id": "SynthDrumTrigger_Synth Drum Trigger",
+   "source_repo": "github.com/dqmcdonald/synthdrumtrigger",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.2135
+  },
+  {
+   "board_id": "TB6600StepperDriver_DEW_TB6600-V1",
+   "source_repo": "github.com/dewhisna/tb6600stepperdriver",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.3543
+  },
+  {
+   "board_id": "TMC261-stepstick_TMC261-stepstick-v1.1",
+   "source_repo": "github.com/duckle29/tmc261-stepstick",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4142
+  },
+  {
+   "board_id": "TTNEnschedeMote_ArduinoNanoRN2483",
+   "source_repo": "github.com/jpmeijers/ttnenschedemote",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.1934
+  },
+  {
+   "board_id": "Teensy-3.5-Breakout-Boaard_PropShield_Uno",
+   "source_repo": "github.com/mjs513/teensy-3.5-breakout-boaard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.2817
+  },
+  {
+   "board_id": "Teensy-3.5-Breakout-Boaard_TeensyMegaIoShield",
+   "source_repo": "github.com/mjs513/teensy-3.5-breakout-boaard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.417
+  },
+  {
+   "board_id": "Teensy-Hats_Teensy-7-Segment-Hat",
+   "source_repo": "github.com/wickerbox/teensy-hats",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.1526
+  },
+  {
+   "board_id": "Teensy-Hats_Teensy-LCD-LiDAR-Hat",
+   "source_repo": "github.com/wickerbox/teensy-hats",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "TeensyProtoboard_TeensyProtoboard",
+   "source_repo": "github.com/norbotnorway/teensyprotoboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 38,
+   "mm_per_px": 0.2557
+  },
+  {
+   "board_id": "ThinkerShield_ThinkerShield",
+   "source_repo": "github.com/freetronics/thinkershield",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2832
+  },
+  {
+   "board_id": "Thremal-Printer_thermal printer",
+   "source_repo": "github.com/gpthimble/thremal-printer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 26,
+   "mm_per_px": 0.3361
+  },
+  {
+   "board_id": "ToslinkCNC_Toslink PlanetCNC ECO shield",
+   "source_repo": "github.com/irnas/toslinkcnc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.2465
+  },
+  {
+   "board_id": "ToslinkCNC__autosave-ToslinkCNC_OneAxis",
+   "source_repo": "github.com/irnas/toslinkcnc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 39,
+   "mm_per_px": 0.2137
+  },
+  {
+   "board_id": "ToslinkCNC_toslink_arduino_shield",
+   "source_repo": "github.com/irnas/toslinkcnc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 24,
+   "mm_per_px": 0.3371
+  },
+  {
+   "board_id": "TripleDelay2399_TripleDelay2399",
+   "source_repo": "github.com/uepro/tripledelay2399",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.349
+  },
+  {
+   "board_id": "UProgrammer-Hardware_Programmer",
+   "source_repo": "github.com/mackpi/uprogrammer-hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3127
+  },
+  {
+   "board_id": "UltrasonicSystem_Schematic",
+   "source_repo": "github.com/sonicators/ultrasonicsystem",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5947
+  },
+  {
+   "board_id": "UniversalBoard4Nucleo_Nucleo_Universal_Board",
+   "source_repo": "github.com/noritsuna/universalboard4nucleo",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2873
+  },
+  {
+   "board_id": "Usb-Serial-Breakout-Cp2102_cp2102",
+   "source_repo": "github.com/lembed/usb-serial-breakout-cp2102",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.0899
+  },
+  {
+   "board_id": "VC4000MultiROM_MultiRomCard",
+   "source_repo": "github.com/mkeller0815/vc4000multirom",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6561
+  },
+  {
+   "board_id": "VM-sensor-PT1000_vm-sensor-pt100",
+   "source_repo": "github.com/iotmakervn/vm-sensor-pt1000",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.2076
+  },
+  {
+   "board_id": "WHCS-Base-Station_base-station",
+   "source_repo": "github.com/whcs-ucf/whcs-base-station",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 43,
+   "mm_per_px": 0.358
+  },
+  {
+   "board_id": "WS2811LEDMatrix_matrixcontrol",
+   "source_repo": "github.com/jeija/ws2811ledmatrix",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "WemosLoraTracker_wemosGPSrfm",
+   "source_repo": "github.com/jpmeijers/wemosloratracker",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.34
+  },
+  {
+   "board_id": "Wkaku_wkaku",
+   "source_repo": "github.com/arendst/wkaku",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "WordClock_v2.0_WordClock_v2",
+   "source_repo": "github.com/icchalmers/wordclock_v2.0",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.433
+  },
+  {
+   "board_id": "Youyue-858D-plus-FAN-speed-mod_youyue-858d-plus-fan-speed-mod",
+   "source_repo": "github.com/madworm/youyue-858d-plus-fan-speed-mod",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.125
+  },
+  {
+   "board_id": "Youyue-858D-plus-MCU-adapter_youyue-858d-plus-mcu-adapter",
+   "source_repo": "github.com/madworm/youyue-858d-plus-mcu-adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.1885
+  },
+  {
+   "board_id": "abus-cfa1000-display-grabber_acs-display-grabber",
+   "source_repo": "github.com/ktt-ol/abus-cfa1000-display-grabber",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 55,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "airqualitystation_hardware",
+   "source_repo": "github.com/tiefpunkt/airqualitystation",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.1815
+  },
+  {
+   "board_id": "akuhei_akuhei",
+   "source_repo": "github.com/sakura-it/akuhei",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.0964
+  },
+  {
+   "board_id": "analog_esr_meter_esr_meter_rev_a",
+   "source_repo": "github.com/4x1md/analog_esr_meter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.3208
+  },
+  {
+   "board_id": "analog_esr_meter_esr_meter_rev_b",
+   "source_repo": "github.com/4x1md/analog_esr_meter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 30,
+   "mm_per_px": 0.3208
+  },
+  {
+   "board_id": "android_debug_cable_android_debug_cable",
+   "source_repo": "github.com/robertfoss/android_debug_cable",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 9,
+   "mm_per_px": 0.105
+  },
+  {
+   "board_id": "anima_MotorDrive",
+   "source_repo": "github.com/lestarch/anima",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 50,
+   "mm_per_px": 0.2607
+  },
+  {
+   "board_id": "antdroid-board_antdroid-board",
+   "source_repo": "github.com/antdroid-hexapod/antdroid-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.4076
+  },
+  {
+   "board_id": "apa102lantern_apa102-lantern-side",
+   "source_repo": "github.com/nervengift/apa102lantern",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.448
+  },
+  {
+   "board_id": "arduino_arduino leds",
+   "source_repo": "github.com/estalldecker/arduino",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.4064
+  },
+  {
+   "board_id": "atmegax8-protoboard_atmegax8-protoboard",
+   "source_repo": "github.com/sgreg/atmegax8-protoboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.2223
+  },
+  {
+   "board_id": "atmel-programmer_atmel_programmer",
+   "source_repo": "github.com/stackmagic/atmel-programmer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.3127
+  },
+  {
+   "board_id": "audio_relay_input_switch_relay_switch",
+   "source_repo": "github.com/jjrh/audio_relay_input_switch",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2652
+  },
+  {
+   "board_id": "audprog_audprog_v2",
+   "source_repo": "github.com/v-ladimir/audprog",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.185
+  },
+  {
+   "board_id": "avr-fuser-32_adapter",
+   "source_repo": "github.com/emard/avr-fuser-32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.6548
+  },
+  {
+   "board_id": "avr-fuser-32_hvpp",
+   "source_repo": "github.com/emard/avr-fuser-32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4101
+  },
+  {
+   "board_id": "avr_frs_shield_avr_frs",
+   "source_repo": "github.com/4x1md/avr_frs_shield",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 44,
+   "mm_per_px": 0.2817
+  },
+  {
+   "board_id": "avr_ledprojector_avr_ledprojection-0402",
+   "source_repo": "github.com/cnlohr/avr_ledprojector",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.142
+  },
+  {
+   "board_id": "avr_ledprojector_avr_ledprojection",
+   "source_repo": "github.com/cnlohr/avr_ledprojector",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "badge2016_Badge_init",
+   "source_repo": "github.com/bornhack/badge2016",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "balena-rover-wide-hat_resin-rover",
+   "source_repo": "github.com/balena-io-experimental/balena-rover-wide-hat",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.349
+  },
+  {
+   "board_id": "basic_esp_board_basic_esp_board",
+   "source_repo": "github.com/wolfeidau/basic_esp_board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2748
+  },
+  {
+   "board_id": "battmanpi_battmanpi",
+   "source_repo": "github.com/andrewerrington/battmanpi",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2666
+  },
+  {
+   "board_id": "beast-phat_beast-phat",
+   "source_repo": "github.com/balena-io-experimental/beast-phat",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.2852
+  },
+  {
+   "board_id": "bee-light-measurement-matrix_bee-light-measurement-matrix",
+   "source_repo": "github.com/tijuca/bee-light-measurement-matrix",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2671
+  },
+  {
+   "board_id": "beer-gauge_sensorboard",
+   "source_repo": "github.com/jeffkub/beer-gauge",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1568
+  },
+  {
+   "board_id": "beryl_rain_beryl_rain",
+   "source_repo": "github.com/timhawes/beryl_rain",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.2034
+  },
+  {
+   "board_id": "blackmagic-isolated_mmp",
+   "source_repo": "github.com/mattbrejza/blackmagic-isolated",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "bldc-gimbal-1d_gimbal-board",
+   "source_repo": "github.com/swedishhat/bldc-gimbal-1d",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3324
+  },
+  {
+   "board_id": "blinky-badge_blinky",
+   "source_repo": "github.com/electronut/blinky-badge",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1644
+  },
+  {
+   "board_id": "bms-8s50-ic_bms-8s50-ic",
+   "source_repo": "github.com/libresolar/bms-8s50-ic",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 59,
+   "mm_per_px": 0.4512
+  },
+  {
+   "board_id": "bmw-ibus-bluetooth_bmw_bt_cdcemu_analog",
+   "source_repo": "github.com/the-vty/bmw-ibus-bluetooth",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2014
+  },
+  {
+   "board_id": "bmw-ibus-bluetooth_bmw_bt_cdcemu_digital",
+   "source_repo": "github.com/the-vty/bmw-ibus-bluetooth",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2465
+  },
+  {
+   "board_id": "boards_shift-register-demo-v2",
+   "source_repo": "github.com/oshpark/boards",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.4274
+  },
+  {
+   "board_id": "bobc_LCD-panel-adapter-lvc",
+   "source_repo": "github.com/bobc/bobc_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "bobc_MS-F100",
+   "source_repo": "github.com/bobc/bobc_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 52,
+   "mm_per_px": 0.2086
+  },
+  {
+   "board_id": "bobc_led_clock",
+   "source_repo": "github.com/bobc/bobc_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "bobc_matrix_clock",
+   "source_repo": "github.com/bobc/bobc_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "bobc_mbeduinopresso",
+   "source_repo": "github.com/bobc/bobc_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "bpnode-bb_BPnode-BB",
+   "source_repo": "github.com/tht/bpnode-bb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2026
+  },
+  {
+   "board_id": "breakout-boards_50-to-100",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.0733
+  },
+  {
+   "board_id": "breakout-boards_avr-isp-x2",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0473
+  },
+  {
+   "board_id": "breakout-boards_esp8266-jtag",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.1255
+  },
+  {
+   "board_id": "breakout-boards_swd-and-uart",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1045
+  },
+  {
+   "board_id": "breakout-boards_swd-to-wires",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0577
+  },
+  {
+   "board_id": "breakout-boards_usb-5v-3v3",
+   "source_repo": "github.com/myelin/breakout-boards",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.1029
+  },
+  {
+   "board_id": "bristle_bot_light_follow_bristle_bot",
+   "source_repo": "github.com/facelesstech/bristle_bot_light_follow",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "bt-tnc_tnc",
+   "source_repo": "github.com/hitov/bt-tnc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 39,
+   "mm_per_px": 0.2325
+  },
+  {
+   "board_id": "busblaster-to-swd_busblaster-to-swd",
+   "source_repo": "github.com/ianrrees/busblaster-to-swd",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1441
+  },
+  {
+   "board_id": "bypass_crossmix_bypass_crossmix",
+   "source_repo": "github.com/cosmoproject/bypass_crossmix",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 44,
+   "mm_per_px": 0.2873
+  },
+  {
+   "board_id": "can_firewall_hardware_CAN_Firewall",
+   "source_repo": "github.com/pdxostc/can_firewall_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 59,
+   "mm_per_px": 0.2791
+  },
+  {
+   "board_id": "card_card",
+   "source_repo": "github.com/hylian/card",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 10,
+   "mm_per_px": 0.3488
+  },
+  {
+   "board_id": "cat-trainer_feather32u4_mma8452_pcb",
+   "source_repo": "github.com/james481/cat-trainer",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 17,
+   "mm_per_px": 0.2342
+  },
+  {
+   "board_id": "cdi-tach_cdi-tach",
+   "source_repo": "github.com/windsorschmidt/cdi-tach",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "cdm324_backpack_cdm324",
+   "source_repo": "github.com/limpkin/cdm324_backpack",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.1031
+  },
+  {
+   "board_id": "ciurlys_ciurlys",
+   "source_repo": "github.com/miceuz/ciurlys",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1686
+  },
+  {
+   "board_id": "clock_cb2",
+   "source_repo": "github.com/gtaubman/clock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 47,
+   "mm_per_px": 0.4532
+  },
+  {
+   "board_id": "clock_lcdb4",
+   "source_repo": "github.com/gtaubman/clock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.4324
+  },
+  {
+   "board_id": "cnlohr_wiflier",
+   "source_repo": "github.com/cnlohr/wiflier",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 38,
+   "mm_per_px": 0.1551
+  },
+  {
+   "board_id": "cnlohr_wiflier_B",
+   "source_repo": "github.com/cnlohr/wiflier",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.1551
+  },
+  {
+   "board_id": "continuity-tester_continuity-tester",
+   "source_repo": "github.com/iromero91/continuity-tester",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1047
+  },
+  {
+   "board_id": "crossover-schiit-stack_xover4schiit",
+   "source_repo": "github.com/introprose/crossover-schiit-stack",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.2176
+  },
+  {
+   "board_id": "custom_cpu--ALU_custom_cpu--ALU",
+   "source_repo": "github.com/lelandbatey/custom_cpu--alu",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "custom_cpu--register_custom_cpu--register",
+   "source_repo": "github.com/lelandbatey/custom_cpu--register",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 39,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "data-manager_data-manager",
+   "source_repo": "github.com/libresolar/data-manager",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 39,
+   "mm_per_px": 0.3039
+  },
+  {
+   "board_id": "denbit_basic",
+   "source_repo": "github.com/theapi/denbit",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "deskbot_breakout",
+   "source_repo": "github.com/superlou/deskbot",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.2218
+  },
+  {
+   "board_id": "devttys0_IRis",
+   "source_repo": "github.com/devttys0/iris",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.1289
+  },
+  {
+   "board_id": "digital_clock_led_clock_3_and_4_digit",
+   "source_repo": "github.com/prabhusammandam/digital_clock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6252
+  },
+  {
+   "board_id": "digital_clock_led_clock_v1",
+   "source_repo": "github.com/prabhusammandam/digital_clock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6261
+  },
+  {
+   "board_id": "disco-dongle_DiscoDongle",
+   "source_repo": "github.com/jgillick/disco-dongle",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2029
+  },
+  {
+   "board_id": "divergence_meter_dm_control",
+   "source_repo": "github.com/q61org/divergence_meter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3654
+  },
+  {
+   "board_id": "dorkyboard_keyboard",
+   "source_repo": "github.com/evnpwr/dorkyboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.7909
+  },
+  {
+   "board_id": "drawduino_drawduino",
+   "source_repo": "github.com/miceuz/drawduino",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.39
+  },
+  {
+   "board_id": "dust_sensor_dust_sensor",
+   "source_repo": "github.com/kadamski/dust_sensor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "dustbox_Dustbox",
+   "source_repo": "github.com/citizensense/dustbox",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.2383
+  },
+  {
+   "board_id": "eBUS-Adapter_Groeger",
+   "source_repo": "github.com/jasiek/ebus-adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1564
+  },
+  {
+   "board_id": "eeg_brainboard_batteryv0",
+   "source_repo": "github.com/gskelly/eeg",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.3555
+  },
+  {
+   "board_id": "eink-adapter_eink",
+   "source_repo": "github.com/sapir/eink-adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 53,
+   "mm_per_px": 0.3502
+  },
+  {
+   "board_id": "elbsupply_elbsupply",
+   "source_repo": "github.com/cybercircuits/elbsupply",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.4307
+  },
+  {
+   "board_id": "elec_power_dispatch",
+   "source_repo": "github.com/utcoupe/elec",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 57,
+   "mm_per_px": 0.3201
+  },
+  {
+   "board_id": "esp-leipa_esp-12",
+   "source_repo": "github.com/sisuware/esp-leipa",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.1826
+  },
+  {
+   "board_id": "esp-serial-terminal_esp-com",
+   "source_repo": "github.com/dima-ch/esp-serial-terminal",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2719
+  },
+  {
+   "board_id": "esp12-appliance_mod_esp12-appliance-mod",
+   "source_repo": "github.com/hwstar/esp12-appliance_mod",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.3127
+  },
+  {
+   "board_id": "esp12-breakout_ESP12Breakout",
+   "source_repo": "github.com/itmarshall/esp12-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.1438
+  },
+  {
+   "board_id": "esp32-cantroller_EltekController",
+   "source_repo": "github.com/neggles/esp32-cantroller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 27,
+   "mm_per_px": 0.2666
+  },
+  {
+   "board_id": "esp32-ethernet_esp32-ethernet",
+   "source_repo": "github.com/russss/esp32-ethernet",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 43,
+   "mm_per_px": 0.2219
+  },
+  {
+   "board_id": "esp8266_32x32panel_esp_12_f_595",
+   "source_repo": "github.com/cnlohr/esp8266_32x32panel",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.3519
+  },
+  {
+   "board_id": "esp8266_32x32panel_esp_12_f_595_ORDERED",
+   "source_repo": "github.com/cnlohr/esp8266_32x32panel",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.3519
+  },
+  {
+   "board_id": "esp8266_envmonitor_environment-monitor-1.2",
+   "source_repo": "github.com/theopensourcerer/esp8266_envmonitor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.2138
+  },
+  {
+   "board_id": "esp8266_envmonitor_environment-monitor-1.4",
+   "source_repo": "github.com/theopensourcerer/esp8266_envmonitor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1774
+  },
+  {
+   "board_id": "esp8266_envmonitor_environment-monitor",
+   "source_repo": "github.com/theopensourcerer/esp8266_envmonitor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1774
+  },
+  {
+   "board_id": "esp8266_link_test_esp12e-generics",
+   "source_repo": "github.com/cnlohr/esp8266_link_test",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 10,
+   "mm_per_px": 0.1276
+  },
+  {
+   "board_id": "esp8266_link_test_esp_micro85-only",
+   "source_repo": "github.com/cnlohr/esp8266_link_test",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.0623
+  },
+  {
+   "board_id": "esp8266_network_speaker_esp_network_speaker",
+   "source_repo": "github.com/jdrobotter/esp8266_network_speaker",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 31,
+   "mm_per_px": 0.1493
+  },
+  {
+   "board_id": "esp8266_wi07_3_adapter_esp",
+   "source_repo": "github.com/mbialon/esp8266_wi07_3_adapter",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.091
+  },
+  {
+   "board_id": "esp_toggl_togglbutton",
+   "source_repo": "github.com/dirkheinke/esp_toggl",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 7,
+   "mm_per_px": 0.2088
+  },
+  {
+   "board_id": "espeverywhere__autosave-espeverywhere_breakout",
+   "source_repo": "github.com/idlehandsproject/espeverywhere",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1523
+  },
+  {
+   "board_id": "eurorack_headphones_eurorack_headphones",
+   "source_repo": "github.com/russellmcc/eurorack_headphones",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.4002
+  },
+  {
+   "board_id": "everled_everled",
+   "source_repo": "github.com/hexagon5un/everled",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1236
+  },
+  {
+   "board_id": "ezusb-logicanalyzer_cypress_logic_analyzer",
+   "source_repo": "github.com/explodinglemur/ezusb-logicanalyzer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.167
+  },
+  {
+   "board_id": "f.60_keyboard",
+   "source_repo": "github.com/robertcalvert/f.60",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.1717
+  },
+  {
+   "board_id": "fan_controller_fan_controller",
+   "source_repo": "github.com/slightlynybbled/fan_controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.2465
+  },
+  {
+   "board_id": "fifogfx_c64cart",
+   "source_repo": "github.com/magervalp/fifogfx",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "filament_extruder_sensor",
+   "source_repo": "github.com/mtu-most/filament_extruder",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.332
+  },
+  {
+   "board_id": "fingerprint-with-esp32_quet van tay",
+   "source_repo": "github.com/phuongnguyennmp/fingerprint-with-esp32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.2813
+  },
+  {
+   "board_id": "firefly-jar_solar_lamp",
+   "source_repo": "github.com/mogenson/firefly-jar",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.2798
+  },
+  {
+   "board_id": "free-of-charge_BMS",
+   "source_repo": "github.com/hosier/free-of-charge",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.365
+  },
+  {
+   "board_id": "freeDSP-CLASSIC-SMD-BALANCED_FreeDSP_BAL",
+   "source_repo": "github.com/freedsp/freedsp-classic-smd-balanced",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "freeUSBi_USBi_Programmer",
+   "source_repo": "github.com/freedsp/freeusbi",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "fst-01_fst-01",
+   "source_repo": "github.com/vinaebizs/fst-01",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.1089
+  },
+  {
+   "board_id": "gamelights_leds",
+   "source_repo": "github.com/skorokithakis/gamelights",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1002
+  },
+  {
+   "board_id": "gdrom_adapter_board_adapter",
+   "source_repo": "github.com/zeldin/gdrom_adapter_board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "gepetto_circuito",
+   "source_repo": "github.com/ivandivito/gepetto",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.3556
+  },
+  {
+   "board_id": "gpsclock_clock",
+   "source_repo": "github.com/mmastrac/gpsclock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.3231
+  },
+  {
+   "board_id": "gsm-iot-core-hw_gsm-iot-core",
+   "source_repo": "github.com/iotmakervn/gsm-iot-core-hw",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2659
+  },
+  {
+   "board_id": "hackaday_esp-14_power_meter__autosave-esp-14",
+   "source_repo": "github.com/hexagon5un/hackaday_esp-14_power_meter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.1523
+  },
+  {
+   "board_id": "hackyflasher_Flasher",
+   "source_repo": "github.com/splatski/hackyflasher",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "hamityanik_ULP-Weather-Logger",
+   "source_repo": "github.com/hamityanik/ulp-weather-logger",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.2711
+  },
+  {
+   "board_id": "hardware-designs_c-trigger",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.1899
+  },
+  {
+   "board_id": "hardware-designs_cc430-debug-board",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.2024
+  },
+  {
+   "board_id": "hardware-designs_energy-harvester",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.1901
+  },
+  {
+   "board_id": "hardware-designs_m-trigger",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.1899
+  },
+  {
+   "board_id": "hardware-designs_nixie-combo",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4061
+  },
+  {
+   "board_id": "hardware-designs_nixie-power",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.2014
+  },
+  {
+   "board_id": "hardware-designs_si7021-board",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1867
+  },
+  {
+   "board_id": "hardware-designs_soil-moisture-sensor",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.608
+  },
+  {
+   "board_id": "hardware-designs_solar-harvester",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1901
+  },
+  {
+   "board_id": "hardware-designs_spirit1-board",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 21,
+   "mm_per_px": 0.1111
+  },
+  {
+   "board_id": "hardware-designs_spsgrf-board",
+   "source_repo": "github.com/snowcap-electronics/hardware-designs",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1008
+  },
+  {
+   "board_id": "helmholtz-servo_CurrentServo",
+   "source_repo": "github.com/kjaergaard-lab/helmholtz-servo",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 52,
+   "mm_per_px": 0.5334
+  },
+  {
+   "board_id": "hillhacks2016_badge_badge1",
+   "source_repo": "github.com/ntavish/hillhacks2016_badge",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.41
+  },
+  {
+   "board_id": "hm-mod-rpi-rtc_hm-mod-rpi-rtc",
+   "source_repo": "github.com/m3h7/hm-mod-rpi-rtc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1828
+  },
+  {
+   "board_id": "hw_trials_demo",
+   "source_repo": "github.com/forgge/hw_trials",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.2036
+  },
+  {
+   "board_id": "hwstar_ac-power-monitor",
+   "source_repo": "github.com/hwstar/hw-ac-emeter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "imfr-schematics_Telescopio",
+   "source_repo": "github.com/imfr11ghz/imfr-schematics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.8282
+  },
+  {
+   "board_id": "induction-hob_temperature-sender",
+   "source_repo": "github.com/johannesc/induction-hob",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2053
+  },
+  {
+   "board_id": "induction-hob_temperature-sensor",
+   "source_repo": "github.com/johannesc/induction-hob",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.0307
+  },
+  {
+   "board_id": "iotuz-esp32-hardware_IoTuz",
+   "source_repo": "github.com/cchs-melbourne/iotuz-esp32-hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6152
+  },
+  {
+   "board_id": "juno-chorus-clone_juno-chorus-clone",
+   "source_repo": "github.com/gligli/juno-chorus-clone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6146
+  },
+  {
+   "board_id": "karabas-nano_karabas-nano-revA",
+   "source_repo": "github.com/andykarpov/karabas-nano",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4166
+  },
+  {
+   "board_id": "karabas-nano_karabas-nano-revB",
+   "source_repo": "github.com/andykarpov/karabas-nano",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4166
+  },
+  {
+   "board_id": "karabas-nano_karabas-nano-revC",
+   "source_repo": "github.com/andykarpov/karabas-nano",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 59,
+   "mm_per_px": 0.4166
+  },
+  {
+   "board_id": "karabas-nano_karabas-nano-revG",
+   "source_repo": "github.com/andykarpov/karabas-nano",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4083
+  },
+  {
+   "board_id": "karabas-nano_wifi_revA",
+   "source_repo": "github.com/andykarpov/karabas-nano",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.2126
+  },
+  {
+   "board_id": "kassenautomat.mdb-interface_mdb-interface",
+   "source_repo": "github.com/fau-fablab/kassenautomat.mdb-interface",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "keyboard_converter_adapter_ibm4704_converter_adapter_ibm4704",
+   "source_repo": "github.com/tmk/keyboard_converter_adapter_ibm4704",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1254
+  },
+  {
+   "board_id": "keytee_pcb",
+   "source_repo": "github.com/trebb/keytee",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 31,
+   "mm_per_px": 0.1338
+  },
+  {
+   "board_id": "kicad-projects_ili9341-breakout",
+   "source_repo": "github.com/spadgenske/kicad-projects",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "kicad_bbb-melzi",
+   "source_repo": "github.com/mtu-most/kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.3008
+  },
+  {
+   "board_id": "kika-in-space_DS8500",
+   "source_repo": "github.com/skopjehacklab/kika-in-space",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.188
+  },
+  {
+   "board_id": "kika-in-space_analog-test-board",
+   "source_repo": "github.com/skopjehacklab/kika-in-space",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1297
+  },
+  {
+   "board_id": "kit2-led-cube_led_cube",
+   "source_repo": "github.com/thimbleio/kit2-led-cube",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "kitspace_120-channel-test-board",
+   "source_repo": "github.com/sci-bots/dropbot-120-channel-test-board.kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3131
+  },
+  {
+   "board_id": "kitspace_12V5A_breakout",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_12_24_boost_converter",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_4_switch_array",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_8_switch_array",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.2912
+  },
+  {
+   "board_id": "kitspace_BQ25570_Harvester",
+   "source_repo": "github.com/kitspace-forks/bq25570_harvester",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.0859
+  },
+  {
+   "board_id": "kitspace_CA3306E",
+   "source_repo": "github.com/kelu124/bomanz",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 19,
+   "mm_per_px": 0.2672
+  },
+  {
+   "board_id": "kitspace_CH330",
+   "source_repo": "github.com/jana-marie/ch330_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.0418
+  },
+  {
+   "board_id": "kitspace_CO2",
+   "source_repo": "github.com/nerdyscout/nodemcu",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.2009
+  },
+  {
+   "board_id": "kitspace_DIY_detector",
+   "source_repo": "github.com/ozel/diy_particle_detector",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.308
+  },
+  {
+   "board_id": "kitspace_GPSMux",
+   "source_repo": "github.com/weirdgyn/gpsmux",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.1068
+  },
+  {
+   "board_id": "kitspace_Lcr_addon",
+   "source_repo": "github.com/eulerlab/open-visual-stimulator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.3495
+  },
+  {
+   "board_id": "kitspace_OSO-BOOK-C1",
+   "source_repo": "github.com/joeycastillo/the-open-book",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.4717
+  },
+  {
+   "board_id": "kitspace_OtterScreen",
+   "source_repo": "github.com/jana-marie/otterscreenadapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 31,
+   "mm_per_px": 0.1842
+  },
+  {
+   "board_id": "kitspace_PWR",
+   "source_repo": "github.com/nerdyscout/nodemcu",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 15,
+   "mm_per_px": 0.2191
+  },
+  {
+   "board_id": "kitspace_Potentiometer_mount_16LED",
+   "source_repo": "github.com/badenlab/led-zappelin",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.4004
+  },
+  {
+   "board_id": "kitspace_Potentiometer_mount_24LED",
+   "source_repo": "github.com/badenlab/led-zappelin",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 48,
+   "mm_per_px": 0.5894
+  },
+  {
+   "board_id": "kitspace_Potentiometer_mount_4LED",
+   "source_repo": "github.com/badenlab/led-zappelin",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1648
+  },
+  {
+   "board_id": "kitspace_Potentiometer_mount_8LED",
+   "source_repo": "github.com/badenlab/led-zappelin",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.3287
+  },
+  {
+   "board_id": "kitspace_RPi_shield",
+   "source_repo": "github.com/matiasandina/fedwatcher",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.2625
+  },
+  {
+   "board_id": "kitspace_Spikeling_V2.1",
+   "source_repo": "github.com/maxzimmer/spikeling-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.4922
+  },
+  {
+   "board_id": "kitspace_Spikeling_V2.2",
+   "source_repo": "github.com/maxzimmer/spikeling-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 41,
+   "mm_per_px": 0.4922
+  },
+  {
+   "board_id": "kitspace_Spikeling_V2.2c",
+   "source_repo": "github.com/maxzimmer/spikeling-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.4922
+  },
+  {
+   "board_id": "kitspace_USB-C-Screen-Adapter-LDR6023SS",
+   "source_repo": "github.com/jana-marie/otterscreenadapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.141
+  },
+  {
+   "board_id": "kitspace__autosave-nunchuk_breakout",
+   "source_repo": "github.com/jana-marie/hoverboard-breakout",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1602
+  },
+  {
+   "board_id": "kitspace_antenna_analyser",
+   "source_repo": "github.com/jasiek/antenna-analyser",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 31,
+   "mm_per_px": 0.4102
+  },
+  {
+   "board_id": "kitspace_aquarius",
+   "source_repo": "github.com/lincolnuehara/aquarius",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4924
+  },
+  {
+   "board_id": "kitspace_ardfpga",
+   "source_repo": "github.com/bru4bas/gelatino-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.2836
+  },
+  {
+   "board_id": "kitspace_beehive",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3489
+  },
+  {
+   "board_id": "kitspace_bobbycar",
+   "source_repo": "github.com/jana-marie/hoverboard-breakout",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.2534
+  },
+  {
+   "board_id": "kitspace_dynamixel_shield",
+   "source_repo": "github.com/descampsa/dynamixelshield",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2817
+  },
+  {
+   "board_id": "kitspace_esp8266-12-breakout",
+   "source_repo": "github.com/mattvenn/esp8266-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.1618
+  },
+  {
+   "board_id": "kitspace_esp8266",
+   "source_repo": "github.com/alpharesearch/esp8266_ds18b20",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "kitspace_filaSens",
+   "source_repo": "github.com/drspangle/infidel-sensor",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "kitspace_flypi",
+   "source_repo": "github.com/amchagas/flypi",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 38,
+   "mm_per_px": 0.6012
+  },
+  {
+   "board_id": "kitspace_flypi_v2",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.3489
+  },
+  {
+   "board_id": "kitspace_gas_sensor",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.1867
+  },
+  {
+   "board_id": "kitspace_grove_adaptor",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0596
+  },
+  {
+   "board_id": "kitspace_hbridge_driver",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.2912
+  },
+  {
+   "board_id": "kitspace_hp_led_switch",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.2912
+  },
+  {
+   "board_id": "kitspace_hum_temp_sensor",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 3,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_ideal_diode",
+   "source_repo": "github.com/inanecoding/kos01_idealdiode20a",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "kitspace_ir_sensor",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 3,
+   "mm_per_px": 0.41
+  },
+  {
+   "board_id": "kitspace_led_driver",
+   "source_repo": "github.com/eulerlab/open-visual-stimulator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 14,
+   "mm_per_px": 0.3078
+  },
+  {
+   "board_id": "kitspace_level_shifter",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_nunchuk_breakout",
+   "source_repo": "github.com/jana-marie/hoverboard-breakout",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.1602
+  },
+  {
+   "board_id": "kitspace_peltier",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2912
+  },
+  {
+   "board_id": "kitspace_pmt_combiner",
+   "source_repo": "github.com/sussex-neuroscience/pmt-combiner",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.3281
+  },
+  {
+   "board_id": "kitspace_power_supply",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_sensor",
+   "source_repo": "github.com/less-smog/hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 54,
+   "mm_per_px": 0.267
+  },
+  {
+   "board_id": "kitspace_solenoid_driver",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_spike_n_hold",
+   "source_repo": "github.com/sussex-neuroscience/odour-stimulator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.4531
+  },
+  {
+   "board_id": "kitspace_ss_relay",
+   "source_repo": "github.com/eulerlab/open-visual-stimulator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.402
+  },
+  {
+   "board_id": "kitspace_sympetrum-v2%20NFF1.1",
+   "source_repo": "github.com/borgel/sympetrum-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 42,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "kitspace_temp_breakout",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 2,
+   "mm_per_px": 0.199
+  },
+  {
+   "board_id": "kitspace_threeboard",
+   "source_repo": "github.com/taylorconor/threeboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.2386
+  },
+  {
+   "board_id": "kitspace_training_board_v02",
+   "source_repo": "github.com/beehive-org/beehive",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 59,
+   "mm_per_px": 0.41
+  },
+  {
+   "board_id": "kitspace_trans_switch_volt_amp",
+   "source_repo": "github.com/sussex-neuroscience/voltage-amplifier",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.4572
+  },
+  {
+   "board_id": "kitspace_tt_nano_HAT_b1",
+   "source_repo": "github.com/vektorious/test_tube_photometer",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.2036
+  },
+  {
+   "board_id": "kitspace_tt_nano_HAT_b2",
+   "source_repo": "github.com/vektorious/test_tube_photometer",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.2426
+  },
+  {
+   "board_id": "kitspace_tt_opt101_module_b1",
+   "source_repo": "github.com/vektorious/test_tube_photometer",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0943
+  },
+  {
+   "board_id": "klangorium_logic_noise_playground",
+   "source_repo": "github.com/hexagon5un/klangorium",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.8201
+  },
+  {
+   "board_id": "komputer-klavier_KomputerKlavier",
+   "source_repo": "github.com/haramcore/komputer-klavier",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.2398
+  },
+  {
+   "board_id": "led-wordclock_wordclock",
+   "source_repo": "github.com/virtex7/led-wordclock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3295
+  },
+  {
+   "board_id": "led_array_atmega8_led_array",
+   "source_repo": "github.com/jnduli/led_array_atmega8",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.4092
+  },
+  {
+   "board_id": "light-painting-wand_light-wand",
+   "source_repo": "github.com/mpetroff/light-painting-wand",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2086
+  },
+  {
+   "board_id": "linklayer_contact",
+   "source_repo": "github.com/linklayer/cantact-hw",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.2508
+  },
+  {
+   "board_id": "low-power-counter_lpcounter",
+   "source_repo": "github.com/emard/low-power-counter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.349
+  },
+  {
+   "board_id": "m2-electronics_m2pa-instrument",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.2463
+  },
+  {
+   "board_id": "m2-electronics_m2pa-m3mount",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.193
+  },
+  {
+   "board_id": "m2-electronics_m2pa-tiny",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1838
+  },
+  {
+   "board_id": "m2-electronics_m2pa",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.2463
+  },
+  {
+   "board_id": "m2-electronics_m2r",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.2299
+  },
+  {
+   "board_id": "m2-electronics_m2rl",
+   "source_repo": "github.com/cuspaceflight/m2-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1643
+  },
+  {
+   "board_id": "mEncoder_mencoder",
+   "source_repo": "github.com/biosafetylvl5/mencoder",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.061
+  },
+  {
+   "board_id": "mac-pro-conversion_front-panel-power-adapter",
+   "source_repo": "github.com/carlossless/mac-pro-conversion",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.2294
+  },
+  {
+   "board_id": "mac-pro-conversion_front-panel-usb-adapter",
+   "source_repo": "github.com/carlossless/mac-pro-conversion",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 7,
+   "mm_per_px": 0.086
+  },
+  {
+   "board_id": "magic-table_etch-a-sketch_cyclone",
+   "source_repo": "github.com/bqlabs/magic-table",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 23,
+   "mm_per_px": 0.4025
+  },
+  {
+   "board_id": "makerspace-emonth_resistor_board",
+   "source_repo": "github.com/google/makerspace-emonth",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.3806
+  },
+  {
+   "board_id": "marlin-neopixel-bridge_ATtiny85_Marneo",
+   "source_repo": "github.com/c-/marlin-neopixel-bridge",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.143
+  },
+  {
+   "board_id": "mavbridge_mavbridge",
+   "source_repo": "github.com/festlv/mavbridge",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.14
+  },
+  {
+   "board_id": "maytal_Maytal",
+   "source_repo": "github.com/dai-maker-lab/maytal",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.3887
+  },
+  {
+   "board_id": "mdbwerk_mdbwerk",
+   "source_repo": "github.com/hubertd/mdbwerk",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.2129
+  },
+  {
+   "board_id": "mearm-base-pcb_ServoPCB",
+   "source_repo": "github.com/mimeindustries/mearm-base-pcb",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.2819
+  },
+  {
+   "board_id": "mechkeys_1800-controller",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.4105
+  },
+  {
+   "board_id": "mechkeys_58r-mxalps",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 1.1707
+  },
+  {
+   "board_id": "mechkeys_LFK78",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 1.5078
+  },
+  {
+   "board_id": "mechkeys_MF68+10",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.5189
+  },
+  {
+   "board_id": "mechkeys_isp",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1568
+  },
+  {
+   "board_id": "mechkeys_lfk78-jtag",
+   "source_repo": "github.com/balzguenat/mechkeys",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.0761
+  },
+  {
+   "board_id": "medusa_medusa_rs422_rx",
+   "source_repo": "github.com/sharebrained/medusa",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.2934
+  },
+  {
+   "board_id": "memsarray_mems_modules",
+   "source_repo": "github.com/lfochamon/memsarray",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0477
+  },
+  {
+   "board_id": "microphone_preamp-power",
+   "source_repo": "github.com/vlad-ivanov-name/microphone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 8,
+   "mm_per_px": 0.2525
+  },
+  {
+   "board_id": "microphone_preamp",
+   "source_repo": "github.com/vlad-ivanov-name/microphone",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.2523
+  },
+  {
+   "board_id": "miniboard-opamp_miniboard-opamp",
+   "source_repo": "github.com/hyves42/miniboard-opamp",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.1464
+  },
+  {
+   "board_id": "miniboard-stm32f0_miniboard-stm32f0",
+   "source_repo": "github.com/hyves42/miniboard-stm32f0",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.1607
+  },
+  {
+   "board_id": "mojo-nes_mojo-nes",
+   "source_repo": "github.com/doragasu/mojo-nes",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 55,
+   "mm_per_px": 0.4091
+  },
+  {
+   "board_id": "moonpunchorg_pcieduino",
+   "source_repo": "github.com/moonpunchorg/pcieduino",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 41,
+   "mm_per_px": 0.2092
+  },
+  {
+   "board_id": "motor-3xdrv8833-hw_ver1",
+   "source_repo": "github.com/ledalert/motor-3xdrv8833-hw",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2504
+  },
+  {
+   "board_id": "nRF24breakoutBoard_nRF24-breakout",
+   "source_repo": "github.com/pilinux/nrf24breakoutboard",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1029
+  },
+  {
+   "board_id": "nan-15_top-plate",
+   "source_repo": "github.com/trebb/nan-15",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.3168
+  },
+  {
+   "board_id": "nanoSwinSidC_nanoSwinSidC",
+   "source_repo": "github.com/uzixls/nanoswinsidc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.1471
+  },
+  {
+   "board_id": "nanoTracer_nanoTracer",
+   "source_repo": "github.com/a-wai/nanotracer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 44,
+   "mm_per_px": 0.3752
+  },
+  {
+   "board_id": "navelino-leaf_navelino-leaf",
+   "source_repo": "github.com/hackerspacevlc/navelino-leaf",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.2565
+  },
+  {
+   "board_id": "nextbusclock_NextBusClockV1",
+   "source_repo": "github.com/chrisgillis/nextbusclock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3702
+  },
+  {
+   "board_id": "nikon_gps_nikon_gps",
+   "source_repo": "github.com/4x1md/nikon_gps",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.1152
+  },
+  {
+   "board_id": "nixie-clock_ab18x5-breakout",
+   "source_repo": "github.com/frankbuss/nixie-clock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 17,
+   "mm_per_px": 0.0754
+  },
+  {
+   "board_id": "nodemcu-backstage_NodeMCU Backstage",
+   "source_repo": "github.com/mplewis/nodemcu-backstage",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.2255
+  },
+  {
+   "board_id": "nodemcu-basecamp_NodeMCU Basecamp",
+   "source_repo": "github.com/mplewis/nodemcu-basecamp",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.2609
+  },
+  {
+   "board_id": "nrf2rfm69_nrf2rfm69",
+   "source_repo": "github.com/tbowmo/nrf2rfm69",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1236
+  },
+  {
+   "board_id": "nrf52-kicad_nrf51x22_qfax_dcdc",
+   "source_repo": "github.com/jacobrosenthal/nrf52-kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 13,
+   "mm_per_px": 0.0713
+  },
+  {
+   "board_id": "nunchuk_rf_hw_NunchukRF_V3",
+   "source_repo": "github.com/vedderb/nunchuk_rf_hw",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.192
+  },
+  {
+   "board_id": "one-shift-register_one-shift-register",
+   "source_repo": "github.com/marginallyclever/one-shift-register",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2817
+  },
+  {
+   "board_id": "onion2-breakout_onion2 breakout",
+   "source_repo": "github.com/washingtonian88/onion2-breakout",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.213
+  },
+  {
+   "board_id": "oshtimer_transponder",
+   "source_repo": "github.com/informatic/oshtimer",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.0646
+  },
+  {
+   "board_id": "ottawa-badges-2016_ottawa-badge-tagger-2016",
+   "source_repo": "github.com/rglenn/ottawa-badges-2016",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "ozinverter_ozinverterkicad",
+   "source_repo": "github.com/jdevine82/ozinverter",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 45,
+   "mm_per_px": 0.6951
+  },
+  {
+   "board_id": "pcb-covox-amp-v2_pcb-covox-amp-v2",
+   "source_repo": "github.com/yeokm1/pcb-covox-amp-v2",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 45,
+   "mm_per_px": 0.3572
+  },
+  {
+   "board_id": "pcb-covox-amp_pcb-covox-amp",
+   "source_repo": "github.com/yeokm1/pcb-covox-amp",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3203
+  },
+  {
+   "board_id": "pcb-ks0108-128x64-glcd_circuit",
+   "source_repo": "github.com/prezeskk/pcb-ks0108-128x64-glcd",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.1878
+  },
+  {
+   "board_id": "pcb-usb-ft245r-parallel-adapter_pcb-usb-ft245r-parallel-adapter",
+   "source_repo": "github.com/yeokm1/pcb-usb-ft245r-parallel-adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.2342
+  },
+  {
+   "board_id": "pesho_pesho",
+   "source_repo": "github.com/kzyapkov/pesho",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 40,
+   "mm_per_px": 0.5434
+  },
+  {
+   "board_id": "phone_amp_phone_amp",
+   "source_repo": "github.com/iocapa/phone_amp",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 31,
+   "mm_per_px": 0.2303
+  },
+  {
+   "board_id": "phone_rtty_interface_phone_rtty_rev_a",
+   "source_repo": "github.com/4x1md/phone_rtty_interface",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "phone_rtty_interface_phone_rtty_rev_b",
+   "source_repo": "github.com/4x1md/phone_rtty_interface",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "photon_Sprinkler_sprinkler",
+   "source_repo": "github.com/broncosis/photon_sprinkler",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.3441
+  },
+  {
+   "board_id": "pi-zero-stepper-board_pi-zero-stepper-board",
+   "source_repo": "github.com/markjb/pi-zero-stepper-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.3441
+  },
+  {
+   "board_id": "pi_plant_MCP3002",
+   "source_repo": "github.com/rringler/pi_plant",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1359
+  },
+  {
+   "board_id": "pmtoy-hardware-pcb_PMToy",
+   "source_repo": "github.com/pmtoy/pmtoy-hardware-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 37,
+   "mm_per_px": 0.1984
+  },
+  {
+   "board_id": "ponchoeduciaaiot_ponchoeduciaaiot",
+   "source_repo": "github.com/ernesto-g/ponchoeduciaaiot",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.3572
+  },
+  {
+   "board_id": "ponyser-pcb_Ponyser",
+   "source_repo": "github.com/pouyanh/ponyser-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1357
+  },
+  {
+   "board_id": "prog-cc-100mA_prog-cc-100mA",
+   "source_repo": "github.com/pepaslabs/prog-cc-100ma",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2036
+  },
+  {
+   "board_id": "pulse_v1_pulse",
+   "source_repo": "github.com/wyolum/pulse_v1",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1051
+  },
+  {
+   "board_id": "pwm-2420-lus_pwm-2420-lus",
+   "source_repo": "github.com/libresolar/pwm-2420-lus",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.3695
+  },
+  {
+   "board_id": "raspberry-pi-rfm69_rfm69-rpi",
+   "source_repo": "github.com/russss/raspberry-pi-rfm69",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.267
+  },
+  {
+   "board_id": "raspberry_pi_pullup_button_pullup_shutdown_button(revB)",
+   "source_repo": "github.com/facelesstech/raspberry_pi_pullup_button",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0899
+  },
+  {
+   "board_id": "raspberry_pi_pullup_button_pullup_shutdown_button",
+   "source_repo": "github.com/facelesstech/raspberry_pi_pullup_button",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 4,
+   "mm_per_px": 0.0972
+  },
+  {
+   "board_id": "rc2014_bank_switcher_z80_cpm_mmu",
+   "source_repo": "github.com/mooped/rc2014_bank_switcher",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.4222
+  },
+  {
+   "board_id": "recalbox-gpio-board__autosave-board",
+   "source_repo": "github.com/christophebraud/recalbox-gpio-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.8646
+  },
+  {
+   "board_id": "recalbox-gpio-board_board",
+   "source_repo": "github.com/christophebraud/recalbox-gpio-board",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 29,
+   "mm_per_px": 0.8646
+  },
+  {
+   "board_id": "retrocon_bbb-adapter",
+   "source_repo": "github.com/phooky/retrocon",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3285
+  },
+  {
+   "board_id": "retrocon_driver_board",
+   "source_repo": "github.com/phooky/retrocon",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 31,
+   "mm_per_px": 0.3441
+  },
+  {
+   "board_id": "retroreflectors_FLAMENCOFLOCK",
+   "source_repo": "github.com/mossmann/retroreflectors",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 8,
+   "mm_per_px": 0.1307
+  },
+  {
+   "board_id": "retroreflectors_SALSAFLOCK",
+   "source_repo": "github.com/mossmann/retroreflectors",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 21,
+   "mm_per_px": 0.217
+  },
+  {
+   "board_id": "retroreflectors_TANGOFLOCK",
+   "source_repo": "github.com/mossmann/retroreflectors",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 6,
+   "mm_per_px": 0.1307
+  },
+  {
+   "board_id": "rfcx-sentinel-pcb_Mainboard",
+   "source_repo": "github.com/rfcx/rfcx-sentinel-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.3439
+  },
+  {
+   "board_id": "rfidBoard_rfid",
+   "source_repo": "github.com/reportingsjr/rfidboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.3078
+  },
+  {
+   "board_id": "rgb-led_rgb-led-v2",
+   "source_repo": "github.com/coredump-ch/rgb-led",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 34,
+   "mm_per_px": 0.3693
+  },
+  {
+   "board_id": "rgb-strip-controller__autosave-rgb-strip",
+   "source_repo": "github.com/luisdiazugena/rgb-strip-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.1716
+  },
+  {
+   "board_id": "rgb2ypbpr_rgb2ypbpr",
+   "source_repo": "github.com/uzixls/rgb2ypbpr",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 27,
+   "mm_per_px": 0.3658
+  },
+  {
+   "board_id": "rjw57_cpu-board",
+   "source_repo": "github.com/rjw57/buri",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4066
+  },
+  {
+   "board_id": "rk86kngmd_rk86kngmd",
+   "source_repo": "github.com/timtashpulatov/rk86kngmd",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.9277
+  },
+  {
+   "board_id": "rodi-pcb_rodi-pcb",
+   "source_repo": "github.com/rodibot/rodi-pcb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.2057
+  },
+  {
+   "board_id": "roomba-ESP12E_roomba-esp",
+   "source_repo": "github.com/gnurbs/roomba-esp12e",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.1645
+  },
+  {
+   "board_id": "royer_royer",
+   "source_repo": "github.com/emard/royer",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.2452
+  },
+  {
+   "board_id": "rufs_aprs_tracker",
+   "source_repo": "github.com/mik4el/rufs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 33,
+   "mm_per_px": 0.3162
+  },
+  {
+   "board_id": "rufs_dra818v_breakout_board",
+   "source_repo": "github.com/mik4el/rufs",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.1986
+  },
+  {
+   "board_id": "rufs_smart_psu",
+   "source_repo": "github.com/mik4el/rufs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.308
+  },
+  {
+   "board_id": "rufs_spv1040_power_controller",
+   "source_repo": "github.com/mik4el/rufs",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1555
+  },
+  {
+   "board_id": "rvi_v2x_hardware_V2X",
+   "source_repo": "github.com/pdxostc/rvi_v2x_hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 57,
+   "mm_per_px": 0.3488
+  },
+  {
+   "board_id": "sb-serial-usb_ch340",
+   "source_repo": "github.com/staticboards/sb-serial-usb",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.185
+  },
+  {
+   "board_id": "scimpy_amp",
+   "source_repo": "github.com/maqifrnswa/scimpy",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 32,
+   "mm_per_px": 0.4274
+  },
+  {
+   "board_id": "scimpy_crossover",
+   "source_repo": "github.com/maqifrnswa/scimpy",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.2057
+  },
+  {
+   "board_id": "scimpy_powersupply",
+   "source_repo": "github.com/maqifrnswa/scimpy",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.213
+  },
+  {
+   "board_id": "scimpy_volumebuffer",
+   "source_repo": "github.com/maqifrnswa/scimpy",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 22,
+   "mm_per_px": 0.2432
+  },
+  {
+   "board_id": "sensorboard_DiffIR",
+   "source_repo": "github.com/quixotic120/sensorboard",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1245
+  },
+  {
+   "board_id": "sensorboard_DiffIR.kicad_pcb_narrow",
+   "source_repo": "github.com/quixotic120/sensorboard",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1359
+  },
+  {
+   "board_id": "server_lader_server_lader",
+   "source_repo": "github.com/ep092/server_lader",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 51,
+   "mm_per_px": 0.4114
+  },
+  {
+   "board_id": "shutter_Shutter V4",
+   "source_repo": "github.com/anome/shutter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 24,
+   "mm_per_px": 0.2661
+  },
+  {
+   "board_id": "small-scope-electronics_small-scope",
+   "source_repo": "github.com/marvin-sinister/small-scope-electronics",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 33,
+   "mm_per_px": 0.2372
+  },
+  {
+   "board_id": "sms-cart-32k_cart",
+   "source_repo": "github.com/reidrac/sms-cart-32k",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.2713
+  },
+  {
+   "board_id": "smt-zvs-driver_IH10-sl",
+   "source_repo": "github.com/hardboiledfrog/smt-zvs-driver",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1963
+  },
+  {
+   "board_id": "smt-zvs-driver_IH10",
+   "source_repo": "github.com/hardboiledfrog/smt-zvs-driver",
+   "held_out": true,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1963
+  },
+  {
+   "board_id": "snappi-zero_snappi-zero",
+   "source_repo": "github.com/tylercrumpton/snappi-zero",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 11,
+   "mm_per_px": 0.2668
+  },
+  {
+   "board_id": "soil-moisture-sensor-analog_analog-moist-sensor",
+   "source_repo": "github.com/miceuz/soil-moisture-sensor-analog",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.4684
+  },
+  {
+   "board_id": "solar-lanterns_proto1",
+   "source_repo": "github.com/jithinbp/solar-lanterns",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.1643
+  },
+  {
+   "board_id": "solar-lora_solar-lora",
+   "source_repo": "github.com/mattvenn/solar-lora",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 48,
+   "mm_per_px": 0.2465
+  },
+  {
+   "board_id": "sonic3_feram_adapter_sonic3_feram_adapter",
+   "source_repo": "github.com/ratfink/sonic3_feram_adapter",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 26,
+   "mm_per_px": 0.1255
+  },
+  {
+   "board_id": "spisolator_spisolator",
+   "source_repo": "github.com/urjaman/spisolator",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 12,
+   "mm_per_px": 0.0891
+  },
+  {
+   "board_id": "srambo_1_srambo_1",
+   "source_repo": "github.com/piotr-wiszowaty/srambo_1",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4637
+  },
+  {
+   "board_id": "starfish_starfish",
+   "source_repo": "github.com/kevinmehall/starfish",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 43,
+   "mm_per_px": 0.1564
+  },
+  {
+   "board_id": "starsynctrackers_reset_switch",
+   "source_repo": "github.com/bluthen/starsynctrackers",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1021
+  },
+  {
+   "board_id": "stlinkv2_breakout_stlink_breakout",
+   "source_repo": "github.com/slightlynybbled/stlinkv2_breakout",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 5,
+   "mm_per_px": 0.1432
+  },
+  {
+   "board_id": "stm32-lpc__autosave-stm32-lpc",
+   "source_repo": "github.com/urjaman/stm32-lpc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 24,
+   "mm_per_px": 0.1188
+  },
+  {
+   "board_id": "stm32-lpc_stm32-lpc",
+   "source_repo": "github.com/urjaman/stm32-lpc",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 24,
+   "mm_per_px": 0.1188
+  },
+  {
+   "board_id": "stm32-network-rs232_stm32-network-rs232",
+   "source_repo": "github.com/joeferner/stm32-network-rs232",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 57,
+   "mm_per_px": 0.3496
+  },
+  {
+   "board_id": "stm32_ccd_camera_ccd",
+   "source_repo": "github.com/trlsmax/stm32_ccd_camera",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 43,
+   "mm_per_px": 0.1523
+  },
+  {
+   "board_id": "stm32_mech_keyboard_TCKB",
+   "source_repo": "github.com/julbouln/stm32_mech_keyboard",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.1684
+  },
+  {
+   "board_id": "stubby_hex",
+   "source_repo": "github.com/thebiguno/stubby",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.2034
+  },
+  {
+   "board_id": "stubby_stubby",
+   "source_repo": "github.com/thebiguno/stubby",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.2034
+  },
+  {
+   "board_id": "sv650sds_sds_tool",
+   "source_repo": "github.com/synfinatic/sv650sds",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 21,
+   "mm_per_px": 0.164
+  },
+  {
+   "board_id": "sweet-sixteen_sweet-sixteen",
+   "source_repo": "github.com/mazdermind/sweet-sixteen",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4758
+  },
+  {
+   "board_id": "tbd_tbd",
+   "source_repo": "github.com/al177/tbd",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 16,
+   "mm_per_px": 0.0835
+  },
+  {
+   "board_id": "tdstat_TDstatv2",
+   "source_repo": "github.com/thomasdob/tdstat",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 44,
+   "mm_per_px": 0.3804
+  },
+  {
+   "board_id": "tepmachcha_tepmachcha",
+   "source_repo": "github.com/dai-maker-lab/tepmachcha",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 8,
+   "mm_per_px": 0.213
+  },
+  {
+   "board_id": "tessel-ice40__autosave-project",
+   "source_repo": "github.com/tcr/tessel-ice40",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 30,
+   "mm_per_px": 0.1776
+  },
+  {
+   "board_id": "thegrid_pole",
+   "source_repo": "github.com/cillian64/thegrid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.1605
+  },
+  {
+   "board_id": "thegrid_shield",
+   "source_repo": "github.com/cillian64/thegrid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 28,
+   "mm_per_px": 0.2055
+  },
+  {
+   "board_id": "thegrid_thegrid",
+   "source_repo": "github.com/cillian64/thegrid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 35,
+   "mm_per_px": 0.4095
+  },
+  {
+   "board_id": "thingBot-LoRa_thingBot-LoRa_v1P0",
+   "source_repo": "github.com/automote/thingbot-lora",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1354
+  },
+  {
+   "board_id": "thingBot-LoRa_thingBot-LoRa_v1P1",
+   "source_repo": "github.com/automote/thingbot-lora",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 15,
+   "mm_per_px": 0.1354
+  },
+  {
+   "board_id": "timecircuits-hardware_BTTF-TimeCircuits",
+   "source_repo": "github.com/twam/timecircuits-hardware",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 1.3121
+  },
+  {
+   "board_id": "tiny-8088_Computer",
+   "source_repo": "github.com/nkeck720/tiny-8088",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.6042
+  },
+  {
+   "board_id": "tinyFISH_tinyBRUSH",
+   "source_repo": "github.com/fishpepper/tinyfish",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.054
+  },
+  {
+   "board_id": "tinyFISH_tinyFISH",
+   "source_repo": "github.com/fishpepper/tinyfish",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 56,
+   "mm_per_px": 0.0824
+  },
+  {
+   "board_id": "tinyisp-micro_tinyispmicro",
+   "source_repo": "github.com/cnlohr/tinyisp-micro",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 24,
+   "mm_per_px": 0.1514
+  },
+  {
+   "board_id": "tinymuseum_museum",
+   "source_repo": "github.com/xxv/tinymuseum",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.2463
+  },
+  {
+   "board_id": "tmk_HHKB_controller",
+   "source_repo": "github.com/tmk/hhkb_controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5803
+  },
+  {
+   "board_id": "type5_type5",
+   "source_repo": "github.com/zetsu42/type5",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 36,
+   "mm_per_px": 0.3488
+  },
+  {
+   "board_id": "uext-esp32_UEXT_ESP32",
+   "source_repo": "github.com/libresolar/uext-esp32",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1092
+  },
+  {
+   "board_id": "usb_rs232c_usb_rs232c_rev_a",
+   "source_repo": "github.com/4x1md/usb_rs232c",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 25,
+   "mm_per_px": 0.1426
+  },
+  {
+   "board_id": "vatx_vatx",
+   "source_repo": "github.com/jerome-labidurie/vatx",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 19,
+   "mm_per_px": 0.2059
+  },
+  {
+   "board_id": "vdcmon_vdcmon",
+   "source_repo": "github.com/pietern/vdcmon",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 28,
+   "mm_per_px": 0.2875
+  },
+  {
+   "board_id": "wavegen_waveform-generator-rev1",
+   "source_repo": "github.com/fifty-nine/wavegen",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2088
+  },
+  {
+   "board_id": "wavegen_waveform-generator",
+   "source_repo": "github.com/fifty-nine/wavegen",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2086
+  },
+  {
+   "board_id": "wavegen_wavegen",
+   "source_repo": "github.com/fifty-nine/wavegen",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 46,
+   "mm_per_px": 0.2088
+  },
+  {
+   "board_id": "wifi_pstn_cid_tel_interf",
+   "source_repo": "github.com/aniline/wifi_pstn_cid",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 45,
+   "mm_per_px": 0.3543
+  },
+  {
+   "board_id": "wordclock_ledboard2",
+   "source_repo": "github.com/apparentlymart/wordclock",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 60,
+   "mm_per_px": 0.6971
+  },
+  {
+   "board_id": "xmasOrn_xmasOrn",
+   "source_repo": "github.com/agrede/xmasorn",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 57,
+   "mm_per_px": 0.3934
+  },
+  {
+   "board_id": "xwhatits-capsense-controller_amkey-usb",
+   "source_repo": "github.com/baslqc/xwhatits-capsense-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 58,
+   "mm_per_px": 0.5045
+  },
+  {
+   "board_id": "xwhatits-capsense-controller_displaywriter-usb",
+   "source_repo": "github.com/baslqc/xwhatits-capsense-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 54,
+   "mm_per_px": 0.4912
+  },
+  {
+   "board_id": "xwhatits-capsense-controller_model-f-3178-adaptor",
+   "source_repo": "github.com/baslqc/xwhatits-capsense-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 20,
+   "mm_per_px": 0.5209
+  },
+  {
+   "board_id": "xwhatits-capsense-controller_model-f-usb",
+   "source_repo": "github.com/baslqc/xwhatits-capsense-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "flagged",
+   "n_samples": 58,
+   "mm_per_px": 0.5742
+  },
+  {
+   "board_id": "xwhatits-capsense-controller_solenoid-driver",
+   "source_repo": "github.com/baslqc/xwhatits-capsense-controller",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 13,
+   "mm_per_px": 0.1859
+  },
+  {
+   "board_id": "yamsek.kicad_i2c_bridge_primary",
+   "source_repo": "github.com/johschneider/yamsek.kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1154
+  },
+  {
+   "board_id": "yamsek.kicad_i2c_bridge_secondary",
+   "source_repo": "github.com/johschneider/yamsek.kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 7,
+   "mm_per_px": 0.1154
+  },
+  {
+   "board_id": "yamsek.kicad_matrix_attiny861a",
+   "source_repo": "github.com/johschneider/yamsek.kicad",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 18,
+   "mm_per_px": 0.1195
+  },
+  {
+   "board_id": "z2amiller_sensorboard_programmer",
+   "source_repo": "github.com/z2amiller/sensorboard",
+   "held_out": true,
+   "in_test_set": true,
+   "tier": "clean",
+   "n_samples": 9,
+   "mm_per_px": 0.1073
+  },
+  {
+   "board_id": "zx-sizif-128_sizif128",
+   "source_repo": "github.com/uzixls/zx-sizif-128",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.5742
+  },
+  {
+   "board_id": "zx-sizif-512-ext_sizif512ext",
+   "source_repo": "github.com/uzixls/zx-sizif-512-ext",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.8734
+  },
+  {
+   "board_id": "zx-sizif-512-wifi_sizif512-wifi",
+   "source_repo": "github.com/uzixls/zx-sizif-512-wifi",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 10,
+   "mm_per_px": 0.1213
+  },
+  {
+   "board_id": "zx-sizif-xxs_sizif-xxs",
+   "source_repo": "github.com/uzixls/zx-sizif-xxs",
+   "held_out": false,
+   "in_test_set": false,
+   "tier": "clean",
+   "n_samples": 60,
+   "mm_per_px": 0.4102
+  }
+ ]
+}
