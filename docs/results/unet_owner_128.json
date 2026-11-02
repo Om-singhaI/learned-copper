@@ -1,0 +1,637 @@
+{
+ "args": {
+  "split": "owner",
+  "epochs": 10,
+  "size": 128,
+  "limit_boards": 0,
+  "batch": 16,
+  "lr": 0.001,
+  "device": "auto",
+  "out": "data/models/unet_owner_128",
+  "seed": 42,
+  "val_frac": 0.15,
+  "workers": 0,
+  "data_dir": "/Users/omsinghal/Desktop/learned-copper/data/raster",
+  "manifest": "/Users/omsinghal/Desktop/learned-copper/splits/raster_manifest.json",
+  "eval_held_out": true,
+  "fixture": false
+ },
+ "device": "mps",
+ "model_parameters": 2143170,
+ "split": {
+  "split": "owner",
+  "val_frac": 0.15,
+  "seed": 42,
+  "n_train_boards": 410,
+  "n_val_boards": 67,
+  "n_boards_in_both": 0,
+  "n_train_groups": 338,
+  "n_val_groups": 60,
+  "n_train_samples": 12961,
+  "n_val_samples": 2054,
+  "n_held_out_boards": 168,
+  "n_held_out_samples": 2703,
+  "val_groups": [
+   "github.com/4x1md/analog_esr_meter",
+   "github.com/adamyoung1234/simple_84_keyboard",
+   "github.com/alangarf/nrc2016",
+   "github.com/anome/shutter",
+   "github.com/apparentlymart/wordclock",
+   "github.com/balena-io-experimental/balena-rover-wide-hat",
+   "github.com/baoshi/jlink-swd",
+   "github.com/black-electronics/esp-12-breakout",
+   "github.com/bobc/atmel-ice-header-adapter",
+   "github.com/bqlabs/magic-table",
+   "github.com/chriz2600/lvds2tmds",
+   "github.com/cidarlab/neptune-hardware",
+   "github.com/cillian64/thegrid",
+   "github.com/descampsa/dynamixelshield",
+   "github.com/devttys0/analogthermometer",
+   "github.com/devttys0/qrpcard",
+   "github.com/dewhisna/tb6600stepperdriver",
+   "github.com/dqmcdonald/synthdrumtrigger",
+   "github.com/drspangle/infidel-sensor",
+   "github.com/embeddeddesign/bgm111-external-programmer",
+   "github.com/ep092/server_lader",
+   "github.com/f6itu/pwrmeter",
+   "github.com/freetronics/thinkershield",
+   "github.com/gatechipdl/birdattractor",
+   "github.com/gnurbs/roomba-esp12e",
+   "github.com/hexagon5un/hackaday_esp-14_power_meter",
+   "github.com/hwstar/6volt-5w-solar-cc",
+   "github.com/icchalmers/wordclock_v2.0",
+   "github.com/iotmakervn/vm-sensor-pt1000",
+   "github.com/itadinanta/limitswitchesplugin",
+   "github.com/jana-marie/ch330_hardware",
+   "github.com/jglim/abovisp",
+   "github.com/jpmeijers/ttnenschedemote",
+   "github.com/ledalert/motor-3xdrv8833-hw",
+   "github.com/libresolar/uext-esp32",
+   "github.com/mage0r/espkit-01",
+   "github.com/marinosk/inhibition",
+   "github.com/mattvenn/esp8266-breakout",
+   "github.com/meerstern/stm32f303_lqfp48",
+   "github.com/nolanmoore/powergloveuhid",
+   "github.com/norbotnorway/teensyprotoboard",
+   "github.com/pepaslabs/4n35-ttl-serial-optoisolator",
+   "github.com/prezeskk/pcb-ks0108-128x64-glcd",
+   "github.com/ratfink/sonic3_feram_adapter",
+   "github.com/riktw/box0-hv-analog-breakoutboard",
+   "github.com/russss/raspberry-pi-rfm69",
+   "github.com/sci-bots/dropbot-120-channel-test-board.kicad",
+   "github.com/sisuware/esp-leipa",
+   "github.com/tcr/tessel-ice40",
+   "github.com/the-vty/bmw-ibus-bluetooth",
+   "github.com/uzixls/zx-sizif-xxs",
+   "github.com/vectorspacehq/2d_conduction",
+   "github.com/vinaebizs/fst-01",
+   "github.com/virtex7/led-wordclock",
+   "github.com/washingtonian88/onion2-breakout",
+   "github.com/whcs-ucf/whcs-base-station",
+   "github.com/wyolum/pulse_v1",
+   "github.com/yeokm1/pcb-usb-ft245r-parallel-adapter",
+   "github.com/yuqlid/ethercat_shield_v1",
+   "github.com/zetsu42/type5"
+  ],
+  "val_boards": [
+   "2d_conduction_sk9822-matrix",
+   "4N35-TTL-Serial-Optoisolator_4N35-TTL-Serial-Optoisolator",
+   "6volt-5W-solar-cc_6vleadacidsolar",
+   "ABOVISP_ABOVISP",
+   "AnalogThermometer_AnalogThermometer",
+   "Atmel-ICE-Header-Adapter_ice header adapter pcb",
+   "BGM111-External-Programmer_BGM111_Programmer",
+   "BirdAttractor_BirdAttractor_RevA",
+   "BirdAttractor_BirdAttractor_RevC",
+   "Box0-hv-analog-breakoutboard_breakout",
+   "ESP-12-breakout_ESP12E-breakout",
+   "ESPkit-01_espkit-01",
+   "EtherCAT_shield_v1_EtherCAT_shield_v1",
+   "Inhibition_amplifier.kicad_pcb-CNC version (with some problems)",
+   "JLink-SWD_JLink-SWD",
+   "LVDS2TMDS_LVDS2TMDS",
+   "LimitSwitchesPlugin_LimitSwitchesPlugin",
+   "NRC2016_banked_ram",
+   "NRC2016_usb_sio",
+   "NRC2016_z80",
+   "Neptune-Hardware_DataAcquisitionBoard",
+   "PWRmeter_PWMeter",
+   "PowerGloveUHID_sensor_board",
+   "QRPCard_QRPCard",
+   "STM32F303_LQFP48_STM32_LQFP48",
+   "Simple_84_Keyboard_84",
+   "SynthDrumTrigger_Synth Drum Trigger",
+   "TB6600StepperDriver_DEW_TB6600-V1",
+   "TTNEnschedeMote_ArduinoNanoRN2483",
+   "TeensyProtoboard_TeensyProtoboard",
+   "ThinkerShield_ThinkerShield",
+   "VM-sensor-PT1000_vm-sensor-pt100",
+   "WHCS-Base-Station_base-station",
+   "WordClock_v2.0_WordClock_v2",
+   "analog_esr_meter_esr_meter_rev_a",
+   "analog_esr_meter_esr_meter_rev_b",
+   "balena-rover-wide-hat_resin-rover",
+   "bmw-ibus-bluetooth_bmw_bt_cdcemu_analog",
+   "bmw-ibus-bluetooth_bmw_bt_cdcemu_digital",
+   "esp-leipa_esp-12",
+   "fst-01_fst-01",
+   "hackaday_esp-14_power_meter__autosave-esp-14",
+   "kitspace_120-channel-test-board",
+   "kitspace_CH330",
+   "kitspace_dynamixel_shield",
+   "kitspace_esp8266-12-breakout",
+   "kitspace_filaSens",
+   "led-wordclock_wordclock",
+   "magic-table_etch-a-sketch_cyclone",
+   "motor-3xdrv8833-hw_ver1",
+   "onion2-breakout_onion2 breakout",
+   "pcb-ks0108-128x64-glcd_circuit",
+   "pcb-usb-ft245r-parallel-adapter_pcb-usb-ft245r-parallel-adapter",
+   "pulse_v1_pulse",
+   "raspberry-pi-rfm69_rfm69-rpi",
+   "roomba-ESP12E_roomba-esp",
+   "server_lader_server_lader",
+   "shutter_Shutter V4",
+   "sonic3_feram_adapter_sonic3_feram_adapter",
+   "tessel-ice40__autosave-project",
+   "thegrid_pole",
+   "thegrid_shield",
+   "thegrid_thegrid",
+   "type5_type5",
+   "uext-esp32_UEXT_ESP32",
+   "wordclock_ledboard2",
+   "zx-sizif-xxs_sizif-xxs"
+  ]
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_loss": 0.9254273715578479,
+   "val": {
+    "front": {
+     "iou": 0.1907701894158565,
+     "f1": 0.32041478886776736,
+     "precision": 0.3592743384025865,
+     "recall": 0.2891409517568375,
+     "tp": 30003,
+     "fp": 53507,
+     "fn": 73763,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.11835306022577408,
+     "f1": 0.21165598670938648,
+     "precision": 0.25764223678746184,
+     "recall": 0.17959949149769033,
+     "tp": 14269,
+     "fp": 41114,
+     "fn": 65180,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.15934580112008523,
+     "f1": 0.2748891676083798,
+     "precision": 0.3187489650306351,
+     "recall": 0.2416396037442349,
+     "tp": 44272,
+     "fp": 94621,
+     "fn": 138943,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.787017689069267,
+    "n_samples": 2054
+   },
+   "lr": 0.0009755282581475784,
+   "seconds": 3642.0
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.7538459456997153,
+   "val": {
+    "front": {
+     "iou": 0.20308991657225256,
+     "f1": 0.33761386206424215,
+     "precision": 0.41397698961453405,
+     "recall": 0.285035560780988,
+     "tp": 29577,
+     "fp": 41869,
+     "fn": 74189,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.1208164022323762,
+     "f1": 0.21558642787835938,
+     "precision": 0.26786915887850465,
+     "recall": 0.18037986632934336,
+     "tp": 14331,
+     "fp": 39169,
+     "fn": 65118,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.16615894616144378,
+     "f1": 0.2849679226118815,
+     "precision": 0.3514158116306244,
+     "recall": 0.23965286685042164,
+     "tp": 43908,
+     "fp": 81038,
+     "fn": 139307,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7731960544103309,
+    "n_samples": 2054
+   },
+   "lr": 0.0009045084971874733,
+   "seconds": 1379.0
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.7416071732838948,
+   "val": {
+    "front": {
+     "iou": 0.2073662900803239,
+     "f1": 0.3435018714437161,
+     "precision": 0.391454424418748,
+     "recall": 0.30601545785710155,
+     "tp": 31754,
+     "fp": 49364,
+     "fn": 72012,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.1308704209355333,
+     "f1": 0.23145078076632042,
+     "precision": 0.2551994053488266,
+     "recall": 0.2117458998854611,
+     "tp": 16823,
+     "fp": 49098,
+     "fn": 62626,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.172456395090831,
+     "f1": 0.2941796314351984,
+     "precision": 0.3303681336244126,
+     "recall": 0.26513658816144964,
+     "tp": 48577,
+     "fp": 98462,
+     "fn": 134638,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7624796165811748,
+    "n_samples": 2054
+   },
+   "lr": 0.0007938926261462372,
+   "seconds": 1345.2
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.7328097574504805,
+   "val": {
+    "front": {
+     "iou": 0.21730944033242436,
+     "f1": 0.3570323750600032,
+     "precision": 0.39976589747264824,
+     "recall": 0.3225526665767207,
+     "tp": 33470,
+     "fp": 50254,
+     "fn": 70296,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.13787572201169934,
+     "f1": 0.2423388061535278,
+     "precision": 0.24919541452775487,
+     "recall": 0.23584941283087263,
+     "tp": 18738,
+     "fp": 56456,
+     "fn": 60711,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.18007415710959732,
+     "f1": 0.3051912560320109,
+     "precision": 0.3285216275060094,
+     "recall": 0.2849548344840761,
+     "tp": 52208,
+     "fp": 106710,
+     "fn": 131007,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7573198891428917,
+    "n_samples": 2054
+   },
+   "lr": 0.0006545084971874749,
+   "seconds": 1431.3
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.7230582545568913,
+   "val": {
+    "front": {
+     "iou": 0.22480833120368005,
+     "f1": 0.3670914468433599,
+     "precision": 0.4001205353589338,
+     "recall": 0.33909951236435826,
+     "tp": 35187,
+     "fp": 52754,
+     "fn": 68579,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.1511289000024356,
+     "f1": 0.26257511213925017,
+     "precision": 0.29860921734387785,
+     "recall": 0.23430124985839973,
+     "tp": 18615,
+     "fp": 43724,
+     "fn": 60834,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.19236090999774752,
+     "f1": 0.32265551207664284,
+     "precision": 0.35801171147191907,
+     "recall": 0.29365499549709356,
+     "tp": 53802,
+     "fp": 96478,
+     "fn": 129413,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7420174280705679,
+    "n_samples": 2054
+   },
+   "lr": 0.0005000000000000003,
+   "seconds": 1415.5
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.7123452533174444,
+   "val": {
+    "front": {
+     "iou": 0.22955061853067407,
+     "f1": 0.373389456393409,
+     "precision": 0.36197240443338613,
+     "recall": 0.38555018021317194,
+     "tp": 40007,
+     "fp": 70518,
+     "fn": 63759,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.16187277399576214,
+     "f1": 0.2786411345866558,
+     "precision": 0.2865522745411014,
+     "recall": 0.2711550806177548,
+     "tp": 21543,
+     "fp": 53637,
+     "fn": 57906,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.2002472590038065,
+     "f1": 0.33367667787054106,
+     "precision": 0.3314396489055222,
+     "recall": 0.33594410937969055,
+     "tp": 61550,
+     "fp": 124155,
+     "fn": 121665,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7333478405563834,
+    "n_samples": 2054
+   },
+   "lr": 0.00034549150281252677,
+   "seconds": 1363.7
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.7016018560271204,
+   "val": {
+    "front": {
+     "iou": 0.23545058500615,
+     "f1": 0.3811574301128004,
+     "precision": 0.3880699862184673,
+     "recall": 0.3744868261280188,
+     "tp": 38859,
+     "fp": 61275,
+     "fn": 64907,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.1680525782667075,
+     "f1": 0.2877483109811435,
+     "precision": 0.30880443251666523,
+     "recall": 0.26938035721028586,
+     "tp": 21402,
+     "fp": 47904,
+     "fn": 58047,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.2060952003119079,
+     "f1": 0.3417561072436234,
+     "precision": 0.35564801699716714,
+     "recall": 0.3289086592255001,
+     "tp": 60261,
+     "fp": 109179,
+     "fn": 122954,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7246496807112782,
+    "n_samples": 2054
+   },
+   "lr": 0.00020610737385376324,
+   "seconds": 1356.2
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.6976253551097564,
+   "val": {
+    "front": {
+     "iou": 0.2382480199471986,
+     "f1": 0.38481469965501414,
+     "precision": 0.39438144277751364,
+     "recall": 0.3757010966983405,
+     "tp": 38985,
+     "fp": 59866,
+     "fn": 64781,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.17072859919079933,
+     "f1": 0.2916621312724502,
+     "precision": 0.31736819507572955,
+     "recall": 0.26980830469861167,
+     "tp": 21436,
+     "fp": 46107,
+     "fn": 58013,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.20893328907146907,
+     "f1": 0.3456489964503202,
+     "precision": 0.36312006442539996,
+     "recall": 0.3297819501678356,
+     "tp": 60421,
+     "fp": 105973,
+     "fn": 122794,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7198217344028692,
+    "n_samples": 2054
+   },
+   "lr": 9.5491502812526e-05,
+   "seconds": 1357.7
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.6919983533061581,
+   "val": {
+    "front": {
+     "iou": 0.2402254944242499,
+     "f1": 0.387390027868714,
+     "precision": 0.39976418721484597,
+     "recall": 0.37575891910645104,
+     "tp": 38991,
+     "fp": 58544,
+     "fn": 64775,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.17440335898356407,
+     "f1": 0.2970075956433038,
+     "precision": 0.3146046852122987,
+     "recall": 0.28127478004757767,
+     "tp": 22347,
+     "fp": 48685,
+     "fn": 57102,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.21118701023260938,
+     "f1": 0.34872733681655116,
+     "precision": 0.363879051059816,
+     "recall": 0.334786998881096,
+     "tp": 61338,
+     "fp": 107229,
+     "fn": 121877,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7180329169479526,
+    "n_samples": 2054
+   },
+   "lr": 2.4471741852423116e-05,
+   "seconds": 1356.1
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.6893792892311826,
+   "val": {
+    "front": {
+     "iou": 0.24072221485650921,
+     "f1": 0.3880356327533782,
+     "precision": 0.3911783140081479,
+     "recall": 0.3849430449280111,
+     "tp": 39944,
+     "fp": 62168,
+     "fn": 63822,
+     "copper_fraction": 0.0030834342859968355
+    },
+    "back": {
+     "iou": 0.1751993137154595,
+     "f1": 0.2981610211489265,
+     "precision": 0.3185923031786241,
+     "recall": 0.28019232463592997,
+     "tp": 22261,
+     "fp": 47612,
+     "fn": 57188,
+     "copper_fraction": 0.0023608481640244646
+    },
+    "overall": {
+     "iou": 0.2123073772589976,
+     "f1": 0.3502533783783784,
+     "precision": 0.36168851934761753,
+     "recall": 0.3395191441748765,
+     "tp": 62205,
+     "fp": 109780,
+     "fn": 121010,
+     "copper_fraction": 0.00272214122501065
+    },
+    "loss": 0.7172478887505518,
+    "n_samples": 2054
+   },
+   "lr": 0.0,
+   "seconds": 1360.4
+  }
+ ],
+ "best_epoch": 10,
+ "final_val": {
+  "front": {
+   "iou": 0.24072221485650921,
+   "f1": 0.3880356327533782,
+   "precision": 0.3911783140081479,
+   "recall": 0.3849430449280111,
+   "tp": 39944,
+   "fp": 62168,
+   "fn": 63822,
+   "copper_fraction": 0.0030834342859968355
+  },
+  "back": {
+   "iou": 0.1751993137154595,
+   "f1": 0.2981610211489265,
+   "precision": 0.3185923031786241,
+   "recall": 0.28019232463592997,
+   "tp": 22261,
+   "fp": 47612,
+   "fn": 57188,
+   "copper_fraction": 0.0023608481640244646
+  },
+  "overall": {
+   "iou": 0.2123073772589976,
+   "f1": 0.3502533783783784,
+   "precision": 0.36168851934761753,
+   "recall": 0.3395191441748765,
+   "tp": 62205,
+   "fp": 109780,
+   "fn": 121010,
+   "copper_fraction": 0.00272214122501065
+  },
+  "loss": 0.7172478887505518,
+  "n_samples": 2054
+ },
+ "heuristic_baseline_val": {
+  "front": {
+   "iou": 0.060610062837704974,
+   "f1": 0.11429283006336996,
+   "precision": 0.06319516414646287,
+   "recall": 0.5970452749455506,
+   "tp": 61953,
+   "fp": 918391,
+   "fn": 41813,
+   "copper_fraction": 0.0030834342859968355
+  },
+  "back": {
+   "iou": 0.04152736292746515,
+   "f1": 0.07974320100576604,
+   "precision": 0.04378711243615796,
+   "recall": 0.4458835227630304,
+   "tp": 35425,
+   "fp": 773603,
+   "fn": 44024,
+   "copper_fraction": 0.0023608481640244646
+  },
+  "overall": {
+   "iou": 0.05192914496464127,
+   "f1": 0.0987312600154011,
+   "precision": 0.05442020999546209,
+   "recall": 0.531495783642169,
+   "tp": 97378,
+   "fp": 1691994,
+   "fn": 85837,
+   "copper_fraction": 0.00272214122501065
+  },
+  "n_samples": 2054,
+  "tau": 8.0
+ }
+}
