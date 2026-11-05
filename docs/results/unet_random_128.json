@@ -11,8 +11,8 @@
   "seed": 42,
   "val_frac": 0.15,
   "workers": 0,
-  "data_dir": "/Users/omsinghal/Desktop/learned-copper/data/raster",
-  "manifest": "/Users/omsinghal/Desktop/learned-copper/splits/raster_manifest.json",
+  "data_dir": "data/raster",
+  "manifest": "splits/raster_manifest.json",
   "eval_held_out": true,
   "fixture": false
  },
