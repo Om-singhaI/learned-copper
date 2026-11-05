@@ -3,18 +3,26 @@
     .venv/bin/python scripts/train_unet.py --split owner --epochs 10
     .venv/bin/python scripts/train_unet.py --fixture                   # smoke test on synthetic boards
     .venv/bin/python scripts/train_unet.py --epochs 0 --eval-held-out  # score a saved model
+    python scripts/train_unet.py --size 256 --amp --workers 2 --time-limit-minutes 660 --resume
+                                                       # a cloud session, see docs/cloud-training.md
 
 Reads  data/raster/<board_id>.npz with x uint8 [N, 6, S, S], y uint8 [N, 2, S, S], net_ids int32 [N]
        and mm_per_px float32, plus splits/raster_manifest.json.
-Writes <out>/model.pt (best validation IoU), <out>/metrics.json, <out>/examples.png and, with
-       --eval-held-out, <out>/held_out_metrics.json.
+Writes <out>/model.pt (best validation IoU), <out>/last.pt (resume state after every epoch),
+       <out>/metrics.json (rewritten after every epoch), <out>/examples.png and, with
+       --eval-held-out, <out>/held_out_metrics.json. --resume continues from last.pt, --amp uses
+       float16 autocast on CUDA, --save-every-minutes adds checkpoints inside an epoch and
+       --time-limit-minutes stops cleanly before a session limit (docs/cloud-training.md).
 
 Input channels: 0 outline, 1 this net's pads on front, 2 this net's pads on back, 3 other nets'
 pads on front, 4 other nets' pads on back, 5 other nets' copper on either layer.
 Targets: this net's tracks and vias on front (channel 0) and on back (channel 1).
 """
 import argparse
+import contextlib
 import json
+import math
+import os
 import random
 import sys
 import time
@@ -385,28 +393,201 @@ def load_checkpoint(path, device):
     return model
 
 
-def train(model, store, train_items, val_items, args, device, out):
-    """Train with AdamW and a cosine schedule; keep the weights with the best validation IoU."""
+# ------------------------------------------------------------------------- resume and bookkeeping
+
+def atomic_save(obj, path):
+    """torch.save through a temporary file, so a kill during the write never leaves a torn file."""
+    tmp = Path(str(path) + ".tmp")
+    torch.save(obj, tmp)
+    os.replace(tmp, path)
+
+
+def write_json(obj, path):
+    tmp = Path(str(path) + ".tmp")
+    with open(tmp, "w") as f:
+        json.dump(obj, f, indent=1)
+    os.replace(tmp, path)
+
+
+def rng_state():
+    """Every random generator the training loop draws from, for an exact resume."""
+    state = {"python": random.getstate(), "numpy": np.random.get_state(),
+             "torch": torch.get_rng_state()}
+    if torch.cuda.is_available():
+        state["cuda"] = torch.cuda.get_rng_state_all()
+    if torch.backends.mps.is_available():
+        state["mps"] = torch.mps.get_rng_state()
+    return state
+
+
+def set_rng_state(state):
+    """Inverse of rng_state. The tensors go back to the CPU first: torch.load with a map_location
+    moves them onto the device, and the setters accept CPU ByteTensors only."""
+    random.setstate(state["python"])
+    np.random.set_state(state["numpy"])
+    torch.set_rng_state(state["torch"].cpu())
+    if "cuda" in state and torch.cuda.is_available():
+        torch.cuda.set_rng_state_all([s.cpu() for s in state["cuda"]])
+    if "mps" in state and torch.backends.mps.is_available():
+        torch.mps.set_rng_state(state["mps"].cpu())
+
+
+def run_signature(args, n_train, n_val, steps_per_epoch):
+    """The settings a resumed run must share with the run that wrote last.pt (epochs may differ)."""
+    return {"split": args.split, "size": args.size, "seed": args.seed, "batch": args.batch,
+            "lr": args.lr, "val_frac": args.val_frac, "limit_boards": args.limit_boards,
+            "n_train_samples": n_train, "n_val_samples": n_val, "steps_per_epoch": steps_per_epoch}
+
+
+def save_resume_state(path, model, opt, sched, scaler, epoch, batches_done, loss_sum, n,
+                      best_iou, best_epoch, history, run, rng):
+    """Write last.pt: everything needed to continue training as if it had not stopped.
+
+    epoch counts finished epochs. batches_done > 0 means epoch + 1 was interrupted after that many
+    loader batches; rng is then the generator state from the start of that epoch, so the resumed run
+    can replay its data order and skip the batches already trained.
+    """
+    atomic_save({
+        "model": {"state_dict": model.state_dict(), "in_channels": IN_CHANNELS,
+                  "out_channels": OUT_CHANNELS, "widths": list(WIDTHS)},
+        "optimizer": opt.state_dict(), "scheduler": sched.state_dict(),
+        "scaler": scaler.state_dict(),
+        "epoch": epoch, "batches_done": batches_done, "loss_sum": loss_sum, "n": n,
+        "best_iou": best_iou, "best_epoch": best_epoch, "history": history, "run": run, "rng": rng,
+        "saved_at": time.time(),
+    }, path)
+
+
+def load_resume_state(path, device, run):
+    """Read last.pt or return None if it is missing; refuse one written with other settings."""
+    path = Path(path)
+    if not path.exists():
+        return None
+    ck = torch.load(path, map_location=device, weights_only=False)
+    differences = {k: (ck["run"].get(k), v) for k, v in run.items() if ck["run"].get(k) != v}
+    if differences:
+        raise SystemExit(f"{path} was written by a run with different settings (saved, requested): "
+                         f"{differences}; change --out or remove last.pt to start fresh")
+    return ck
+
+
+def place_on_schedule(opt, sched, total_steps):
+    """Keep the scheduler's step count but move the learning rate onto a cosine of total_steps.
+
+    Used when a run is resumed with a different --epochs: the optimizer continues from the same
+    point in the new schedule, and later steps follow that curve exactly.
+    """
+    if sched.T_max == total_steps:
+        return
+    sched.T_max = total_steps
+    for g, base in zip(opt.param_groups, sched.base_lrs):
+        g["lr"] = sched.eta_min + (base - sched.eta_min) * (
+            1 + math.cos(math.pi * sched.last_epoch / total_steps)) / 2
+
+
+def write_metrics(out, meta, history, best_epoch, status, final_val=None, heuristic=None):
+    """metrics.json: the header in meta, then the epoch history and the final scores when known."""
+    metrics = {k: v for k, v in meta.items() if k != "status"}
+    metrics.update({"epochs": history, "best_epoch": best_epoch, "final_val": final_val,
+                    "heuristic_baseline_val": heuristic, "status": status})
+    write_json(metrics, Path(out) / "metrics.json")
+
+
+def train(model, store, train_items, val_items, args, device, out, meta=None, started=None):
+    """Train with AdamW and a cosine schedule; keep the weights with the best validation IoU.
+
+    Every epoch ends with <out>/last.pt (model, optimizer, scheduler, scaler, epoch, best metric,
+    RNG state, history) and a rewritten metrics.json. Optional args: --resume continues from
+    last.pt, --amp uses float16 autocast with a GradScaler on CUDA, --save-every-minutes writes
+    last.pt inside long epochs, --time-limit-minutes stops after the last epoch that fits.
+    meta is the metrics.json header; its "status" key is set to complete or stopped_at_time_limit.
+    started is the run's start time for the time limit. Returns (history, best_epoch).
+    """
+    out = Path(out)
+    meta = {} if meta is None else meta
+    started = time.time() if started is None else started
+    use_amp = bool(getattr(args, "amp", False)) and device.type == "cuda"
+    save_every = float(getattr(args, "save_every_minutes", 0) or 0) * 60
+    time_limit = float(getattr(args, "time_limit_minutes", 0) or 0) * 60
+
     train_loader = make_loader(store, train_items, args.batch, True, True, args.workers)
     val_loader = make_loader(store, val_items, args.batch, False, False, args.workers)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
     total_steps = max(1, args.epochs * len(train_loader))
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=total_steps)
+    scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+    run = run_signature(args, len(train_items), len(val_items), len(train_loader))
+
+    def autocast():
+        return torch.autocast("cuda", dtype=torch.float16) if use_amp else contextlib.nullcontext()
+
     history, best_iou, best_epoch = [], -1.0, 0
-    for epoch in range(1, args.epochs + 1):
+    start_epoch, skip, loss_sum, n = 1, 0, 0.0, 0
+    ck = load_resume_state(out / "last.pt", device, run) if getattr(args, "resume", False) else None
+    if ck is None and getattr(args, "resume", False):
+        print(f"no {out / 'last.pt'} to resume from; starting fresh")
+    if ck is not None:
+        model.load_state_dict(ck["model"]["state_dict"])
+        opt.load_state_dict(ck["optimizer"])
+        sched.load_state_dict(ck["scheduler"])
+        place_on_schedule(opt, sched, total_steps)
+        if use_amp and ck.get("scaler"):
+            scaler.load_state_dict(ck["scaler"])
+        history, best_iou, best_epoch = ck["history"], ck["best_iou"], ck["best_epoch"]
+        start_epoch, skip = ck["epoch"] + 1, ck["batches_done"]
+        loss_sum, n = ck["loss_sum"], ck["n"]
+        set_rng_state(ck["rng"])
+        print(f"resumed from {out / 'last.pt'}: {ck['epoch']} epochs done"
+              + (f", {skip} batches into epoch {start_epoch}" if skip else "")
+              + f", best val IoU {best_iou:.3f} at epoch {best_epoch}, "
+              f"lr {opt.param_groups[0]['lr']:.3e}, scheduler step {sched.last_epoch} "
+              f"of {total_steps}")
+        if start_epoch > args.epochs:
+            print(f"all {args.epochs} epochs are done already")
+
+    def save_last(epoch_done, batches_done, rng):
+        save_resume_state(out / "last.pt", model, opt, sched, scaler, epoch_done, batches_done,
+                          loss_sum, n, best_iou, best_epoch, history, run, rng)
+
+    meta["status"] = "complete"
+    for epoch in range(start_epoch, args.epochs + 1):
         model.train()
-        t0, loss_sum, n = time.time(), 0.0, 0
+        t0, last_save = time.time(), time.time()
+        if not skip:
+            loss_sum, n = 0.0, 0
+        epoch_rng = rng_state()  # state at the start of this epoch, for mid epoch checkpoints
+        batches_done = 0
         for x, y in train_loader:
+            batches_done += 1
+            if skip:
+                skip -= 1  # replay the data order of the interrupted epoch without training
+                continue
             if x.shape[0] < 2:
                 continue  # BatchNorm cannot normalise a batch of one
             x, y = x.to(device), y.to(device)
-            loss = loss_fn(model(x), y)
+            with autocast():
+                logits = model(x)
+            loss = loss_fn(logits.float(), y)
             opt.zero_grad(set_to_none=True)
-            loss.backward()
-            opt.step()
+            scaler.scale(loss).backward()
+            scaler.step(opt)
+            scaler.update()
             sched.step()
             loss_sum += loss.item() * x.shape[0]
             n += x.shape[0]
+            now = time.time()
+            if time_limit and now - started > time_limit:
+                save_last(epoch - 1, batches_done, epoch_rng)
+                print(f"time limit of {time_limit / 60:g} minutes reached {batches_done} batches "
+                      f"into epoch {epoch}; saved {out / 'last.pt'}, continue with --resume",
+                      flush=True)
+                meta["status"] = "stopped_at_time_limit"
+                return history, best_epoch
+            if save_every and now - last_save > save_every:
+                save_last(epoch - 1, batches_done, epoch_rng)
+                last_save = now
+                print(f"  checkpoint after {batches_done} batches of epoch {epoch} "
+                      f"({(now - started) / 60:.1f} minutes into the run)", flush=True)
         val = evaluate(model, val_loader, device)
         rec = {"epoch": epoch, "train_loss": loss_sum / max(n, 1), "val": val,
                "lr": sched.get_last_lr()[0], "seconds": round(time.time() - t0, 1)}
@@ -416,6 +597,16 @@ def train(model, store, train_items, val_items, args, device, out):
         if val["overall"]["iou"] > best_iou:
             best_iou, best_epoch = val["overall"]["iou"], epoch
             save_checkpoint(model, out / "model.pt")
+        save_last(epoch, 0, rng_state())
+        write_metrics(out, meta, history, best_epoch, "running")
+        if time_limit and epoch < args.epochs:
+            elapsed, longest = time.time() - started, max(r["seconds"] for r in history)
+            if elapsed + longest > time_limit:
+                print(f"time limit: {elapsed / 60:.1f} of {time_limit / 60:g} minutes used and an "
+                      f"epoch takes up to {longest / 60:.1f}; stopping after epoch {epoch}, "
+                      f"continue with --resume", flush=True)
+                meta["status"] = "stopped_at_time_limit"
+                break
     return history, best_epoch
 
 
@@ -545,11 +736,23 @@ def parse_args():
     p.add_argument("--out", default=None, help="default data/models/unet_<split>")
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--val-frac", type=float, default=0.15)
-    p.add_argument("--workers", type=int, default=0, help="DataLoader workers; 0 keeps the cache in process")
+    p.add_argument("--workers", type=int, default=0,
+                   help="DataLoader workers; 0 keeps the cache in process. Linux workers fork "
+                        "and each keeps its own board cache (see docs/cloud-training.md)")
     p.add_argument("--data-dir", default=str(DEFAULT_DATA))
     p.add_argument("--manifest", default=str(DEFAULT_MANIFEST))
     p.add_argument("--eval-held-out", action="store_true", help="score the best model on held out boards")
     p.add_argument("--fixture", action="store_true", help="train on a small synthetic fixture")
+    p.add_argument("--amp", action="store_true",
+                   help="float16 autocast with a GradScaler on CUDA; ignored on other devices")
+    p.add_argument("--resume", action="store_true",
+                   help="continue from <out>/last.pt when it exists")
+    p.add_argument("--save-every-minutes", type=float, default=0,
+                   help="also write last.pt this often inside an epoch "
+                        "(0 writes it at epoch ends only)")
+    p.add_argument("--time-limit-minutes", type=float, default=0,
+                   help="stop cleanly, with last.pt and metrics.json written, before this much "
+                        "wall time has passed since the start (0 means no limit)")
     a = p.parse_args()
     if a.fixture:
         a.data_dir, a.manifest = (str(q) for q in make_fixture(FIXTURE_DIR))
@@ -563,11 +766,16 @@ def parse_args():
 
 
 def main():
+    started = time.time()
     args = parse_args()
     random.seed(args.seed)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     device = pick_device(args.device)
+    if device.type == "cuda":
+        torch.backends.cudnn.benchmark = True  # fixed input sizes, let cuDNN tune its kernels
+    if args.amp and device.type != "cuda":
+        print(f"--amp needs a CUDA device; training in full precision on {device}")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
 
@@ -586,10 +794,19 @@ def main():
     n_params = count_parameters(model)
     print(f"UNet parameters: {n_params:,}")
 
+    meta = {"args": vars(args), "device": str(device), "model_parameters": n_params, "split": desc}
     history, best_epoch = [], 0
     if args.epochs > 0:
-        history, best_epoch = train(model, store, train_items, val_items, args, device, out)
+        history, best_epoch = train(model, store, train_items, val_items, args, device, out,
+                                    meta, started)
+    elif (out / "last.pt").exists():
+        # Scoring only: keep the epoch history of the run that trained this model in metrics.json.
+        ck = torch.load(out / "last.pt", map_location="cpu", weights_only=False)
+        history, best_epoch = ck["history"], ck["best_epoch"]
     if not (out / "model.pt").exists():
+        if meta.get("status") == "stopped_at_time_limit":
+            raise SystemExit(f"stopped before the first epoch finished, so there is no "
+                             f"{out / 'model.pt'} yet; continue with --resume")
         raise SystemExit(f"no model at {out / 'model.pt'}; train first")
     model = load_checkpoint(out / "model.pt", device)
 
@@ -600,13 +817,7 @@ def main():
     if heuristic:
         print(f"heuristic baseline on val (reference): {fmt(heuristic)}")
     save_examples(model, store, val_items, out / "examples.png", device)
-    metrics = {
-        "args": vars(args), "device": str(device), "model_parameters": n_params,
-        "split": desc, "epochs": history, "best_epoch": best_epoch, "final_val": final,
-        "heuristic_baseline_val": heuristic,
-    }
-    with open(out / "metrics.json", "w") as f:
-        json.dump(metrics, f, indent=1)
+    write_metrics(out, meta, history, best_epoch, meta.get("status", "complete"), final, heuristic)
     print(f"wrote {out / 'metrics.json'} and {out / 'examples.png'}")
 
     if args.eval_held_out:
